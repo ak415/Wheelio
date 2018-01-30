@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  year: 1
+  make: MyString
+  model: MyString
+  description: MyText
+  mpg: 1.5
+  mpg-city: 1.5
+  mpg-highway: 1.5
+  0-60: 1.5
+  price: 1.5
+
+two:
+  year: 1
+  make: MyString
+  model: MyString
+  description: MyText
+  mpg: 1.5
+  mpg-city: 1.5
+  mpg-highway: 1.5
+  0-60: 1.5
+  price: 1.5
