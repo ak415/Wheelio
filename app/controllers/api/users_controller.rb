@@ -1,5 +1,4 @@
 class Api::UsersController < ApplicationController
-
   def new
     @user = User.new
   end
@@ -20,6 +19,4 @@ class Api::UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :email, :password, :img_url)
   end
-
-
 end
