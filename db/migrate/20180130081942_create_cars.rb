@@ -6,8 +6,8 @@ class CreateCars < ActiveRecord::Migration[5.1]
       t.string :model, null: false
       t.text :description, null: false
       t.float :mpg, null: false
-      t.float :mpg-city
-      t.float :mpg-highway
+      t.float :mpg_city
+      t.float :mpg_highway
       t.float :acceleration, null: false
       t.float :price, null: false
 
