@@ -14,7 +14,7 @@ class User < ApplicationRecord
 
   has_many :upvotes,
     foreign_key: :user_id,
-    class_name: :Review
+    class_name: :Upvote
 
 
   def self.find_by_credentials(username, password)
