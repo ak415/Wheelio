@@ -4,6 +4,7 @@ class Api::SessionsController < ApplicationController
       params[:user][:username],
       params[:user][:password]
     )
+    
     if @user
       login(@user)
       render :show
@@ -16,7 +17,7 @@ class Api::SessionsController < ApplicationController
     @user = current_user
     if @user
       logout
-      render :destroy, status: 200 
+      render :destroy, status: 200
     else
       render json: ["Not signed in"], status: 404
     end
