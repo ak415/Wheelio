@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(version: 20180130082652) do
     t.text "body", null: false
     t.integer "user_id", null: false
     t.integer "car_id", null: false
-    t.integer "upvotes"
     t.float "user_rating", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

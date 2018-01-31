@@ -12,12 +12,6 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-node_modules/
-bundle.js
-bundle.js.map
-.byebug_history
-.DS_Store
-npm-debug.log
 
 /node_modules
 /yarn-error.log
