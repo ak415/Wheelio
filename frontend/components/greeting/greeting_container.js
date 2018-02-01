@@ -1,16 +1,20 @@
 import { connect } from 'react-redux';
 
-import { logout } from '../../actions/session_actions';
+
+// ADDED LOGIN
+import { logout, login } from '../../actions/session_actions';
 import Greeting from './greeting';
-import {withRouter } from 'react-router';
+import { withRouter } from 'react-router';
 
 
 const mapStateToProps = ({ session }) => ({
   currentUser: session.currentUser
 });
 
+// ADDED LOGIN
 const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => dispatch(logout()),
+  login: (user) => dispatch(login(user))
 });
 
 export default withRouter(connect(

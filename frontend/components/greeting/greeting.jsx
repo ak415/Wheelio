@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = () => (
+// ADDED DEMO USER WITH ONCLICK LOGIN
+const sessionLinks = (login) => (
   <nav className="welcome-login-signup">
     <Link to="/login">Login</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup">Sign up!</Link>
+    &nbsp;&nbsp;
+    <Link to="/signup">Sign Up</Link>
+    &nbsp;&nbsp;
+    <Link to="" onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
   </nav>
 );
 
@@ -16,8 +19,8 @@ const personalGreeting = (currentUser, logout) => (
 	</hgroup>
 );
 
-const Greeting = ({currentUser, logout}) => (
- currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
+const Greeting = ({currentUser, logout, login}) => (
+ currentUser ? personalGreeting(currentUser, logout) : sessionLinks(login)
 );
 
 export default Greeting;
