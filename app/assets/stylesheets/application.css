@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ .welcome-login-signup {
+   text-align: right;
+   font-size: 25px;
+   vertical-align: text-top;
+   position: absolute;
+   right: 10px;
+   top: 10px
+ }
+
+ .wheelio-homepage-link {
+  text-decoration: none;
+  color: red;
+  right: 10px;
+  top: 10px
+}

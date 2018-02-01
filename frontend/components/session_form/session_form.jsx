@@ -11,6 +11,11 @@ class SessionForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentWillUnmount() {
+    console.log(this.props);
+    this.props.clearError();
+  }
+
   componentWillReceiveProps(nextProps) {
     if (nextProps.loggedIn) {
       this.props.history.push('/');
@@ -50,6 +55,7 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div>
         <form onSubmit={this.handleSubmit}>

@@ -13,11 +13,13 @@ import { AuthRoute } from '../util/route_util';
 const App = () => (
   <div>
     <header>
-      <h1>Wheelio</h1>
+      <Link to="/" className="wheelio-homepage-link">
+        <h1>Wheelio</h1>
+      </Link>
       <GreetingContainer />
     </header>
     <AuthRoute path="/login" component={SessionFormContainer} />
-    <AuthRoute exact path="/signup" component={SessionFormContainer} />
+    <AuthRoute path="/signup" component={SessionFormContainer} />
 
   </div>
 );
