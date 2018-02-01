@@ -36,9 +36,9 @@ class SessionForm extends React.Component {
 
   navLink() {
     if (this.props.formType === 'login') {
-      return <Link to="/signup">sign up instead</Link>;
+      return <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>;
     } else {
-      return <Link to="/login">log in instead</Link>;
+      return <p>Already have an account? <Link to="/login">Login</Link></p>;
     }
   }
 
@@ -55,29 +55,37 @@ class SessionForm extends React.Component {
   }
 
   render() {
+
+    let greeting = "";
+    if (this.props.formType === 'login') {
+      greeting = "Login to you account";
+    } else {
+      greeting = "Create a new account";
+    }
+
     return (
-      <div class="session-form-container">
-        <form onSubmit={this.handleSubmit} class="session-form">
-          <h3>Welcome to Wheelio!</h3>
-          <br/>
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
-          <div>
-            <br/>
+      <div className="session-form-container">
+        <form onSubmit={this.handleSubmit} className="session-form">
+          <h3 className="form-welcome-message">Welcome to Wheelio!</h3>
+          <div className="greeting">
+            { greeting }
+          </div>
+          <div className="login-errors">
+            {this.renderErrors()}
+          </div>
+          <div className="login-inputs">
             <label>Username:
               <input type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
               />
             </label>
-            <br/>
             {  (this.props.formType === 'signup') &&
               <label>Email:
                 <input type="password"
                   value={this.state.email}
                   onChange={this.update('email')}
                   />
-                <br/>
               </label>
             }
             <label>Password:
@@ -86,8 +94,12 @@ class SessionForm extends React.Component {
                 onChange={this.update('password')}
               />
             </label>
-            <br/>
+          </div>
+          <div className="submit-button">
             <input type="submit" value="Submit" />
+          </div>
+          <div className="alternative-option">
+            {this.navLink()}
           </div>
         </form>
       </div>

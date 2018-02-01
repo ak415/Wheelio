@@ -26,12 +26,7 @@
 }
 
 .welcome-login-signup-effects:hover {
-	border: 3px dotted #b30000;
-	color: #b30000;
-	background: white;
-  vertical-align: middle;
-  padding: 10px;
-  font-weight: 700px;
+  color: #ffecb3;
 }
 
 
@@ -42,7 +37,7 @@
 }
 
 .wheelio-homepage-link:hover {
-  color: yellow;
+  color: #ffecb3;
 }
 
 
@@ -71,20 +66,17 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.welcome-message{
+.form-welcome-message{
   /* position: absolute; */
   /* left: 50%;
   background: blue; */
   text-align: center;
-  font-size: 65px;
+  font-size: 25px;
   color: #b30000;
   font-family: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.session-form {
-  background-color: yellow;
-}
 
 .homepage-search{
   display: flex;
@@ -105,7 +97,109 @@
   height: 40px;
 
 }
+.session-form-container{
+  width: 450px;
+  margin: 50px auto;
+  border: 3px solid #990000;
+  padding:
+}
+.session-form {
+  vertical-align: middle;
+  background: white;
+  text-align: center;
+  padding: 35px 40px 5px 40px;
+  background: #fff3e6;
+}
 
-.search-start {
+.session-form input[type="text"], input[type="password"]{
+  width: 63%;
+  height: 30px;
+  font-size: 14px;
+  background: white;
+  text-align: left;
+  margin: 2px;
 
 }
+
+.session-form  input[type="submit"]{
+  padding: 1px 3px 1px 3px;
+  font-size: 14px;
+  width: 50px;
+  background: #620000;
+  margin: 20px;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-radius: 7px;
+}
+
+.session-form  input[type="submit"]:hover {
+  background: white;
+  color: #620000;
+  font-weight: 900px;
+}
+
+
+.form-login-signup-buttons {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin: 10px;
+}
+
+ .form-login-signup-buttons div {
+   width: 200px;
+   background: #990000;
+   height: 25px;
+   color: white;
+ }
+
+ .login-errors{
+   width: 500px;
+   color: red;
+   text-align: left;
+   margin-left: 20px;
+   margin-bottom: 17px;
+ }
+
+ .login-inputs {
+   display: flex;
+   flex-direction: column;
+   text-align: right;
+ }
+
+ .login-inputs label {
+   margin: 1.5px;
+   padding-right: 40px;
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ }
+
+ .login-inputs input {
+   /* padding-right: 10px; */
+   padding:0 8px;
+ }
+
+
+ .alternative-option {
+   font-size: 14px;
+   color: grey;
+   padding-top: 20px;
+   text-align: right;
+   margin-right: -35px;
+ }
+
+ .alternative-option a {
+   color: #BE5A38;
+   font-weight: 700;
+   width: 50px;
+ }
+
+
+
+ .greeting {
+   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   color: #3C1518;
+   margin-bottom: 20px;
+   font-size: 20px;
+ }
