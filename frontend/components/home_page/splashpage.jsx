@@ -14,14 +14,16 @@ class splashPage extends React.Component {
           Willing to tell other people what you think of your current car?
         </li>
       </ul>
-      <div className="welcome-message">
-        <div>Wheelio gets the job done</div>
+      <div className="flex-box-welcome-message">
+        <div className="welcome-message">
+          <div>Wheelio gets the job done</div>
+        </div>
       </div>
 
       <div className="homepage-search">
-        <div className="search-start">
+        <span className="search-start">
           Your search starts here:
-        </div>
+        </span>
         <input className="search-input" type="text"/>
       </div>
     </div>

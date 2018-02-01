@@ -6,7 +6,7 @@
   background-color: #990000;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
@@ -48,6 +48,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left top;
+  height: 700px;
 }
 
 .homepage-questions{
@@ -55,18 +56,20 @@
   justify-content: center;
   padding: 20px 10px 40px 10px;
   /* width: 700px; */
-  font-size: 25px;
+  font-size: 17px;
 }
 
 .hp-question {
 
   width: 400px;
-  padding: 20px;
-  color: #404040;
-  border: 6px solid #660000 ;
+  padding: 10px;
+  background: #AB2E2E;
+  color: #fff3e6;
+  opacity: 0.9;
+  border: 3px solid #660000 ;
   border-radius: 25px;
   box-sizing: border-box;
-  margin: 20px;
+  margin: 15px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
@@ -81,14 +84,26 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+.flex-box-welcome-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .welcome-message{
   /* position: absolute; */
   /* left: 50%;
   background: blue; */
   text-align: center;
-  font-size: 60px;
+  font-size: 34px;
   color: #b30000;
   font-family: 700px;
+  background: white;
+  border: 3px solid #660000 ;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin: 20px;
+  width: 450px;
+  font-weight: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
@@ -97,12 +112,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  padding: 50px;
+  font-size: 18px;
+  margin: 100px auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: #660000 ;
-
+  background: #990000;
+  color: #fff3e6;
   vertical-align: middle;
+  width: 540px;
+  border-radius: 7px;
 }
 
 .search-input {
@@ -110,6 +127,7 @@
   font-size: 20px;
   width: 300px;
   height: 40px;
+  color: #660000;
 
 }
 .session-form-container{
@@ -117,6 +135,11 @@
   margin: 50px auto;
   border: 3px solid #990000;
 }
+
+.homepage-search span{
+  padding: 10px;
+}
+
 .session-form {
   vertical-align: middle;
   background: white;
