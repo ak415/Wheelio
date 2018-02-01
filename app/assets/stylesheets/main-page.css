@@ -44,6 +44,10 @@
 
 .splash-page{
   font-size: 50px;
+  background-image: url("https://github.com/aazaiez/Wheelio/blob/master/app/assets/images/home_page_image.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 .homepage-questions{
