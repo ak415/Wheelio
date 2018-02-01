@@ -101,7 +101,6 @@
   width: 450px;
   margin: 50px auto;
   border: 3px solid #990000;
-  padding:
 }
 .session-form {
   vertical-align: middle;
@@ -161,6 +160,7 @@
    text-align: left;
    margin-left: 20px;
    margin-bottom: 17px;
+   height: 50px;
  }
 
  .login-inputs {
