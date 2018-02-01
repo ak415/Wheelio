@@ -55,11 +55,10 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          Welcome to Wheelio!
+      <div class="session-form-container">
+        <form onSubmit={this.handleSubmit} class="session-form">
+          <h3>Welcome to Wheelio!</h3>
           <br/>
           Please {this.props.formType} or {this.navLink()}
           {this.renderErrors()}

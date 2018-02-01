@@ -9,13 +9,14 @@ Car.destroy_all
 User.destroy_all
 Review.destroy_all
 
-User.create( username: 'Akram', email: "aazzaiez@gmail.com", password_digest: "eofm452kfnso43", session_token: "34r3rfw3f43")
-User.create( username: 'Dan', email: "Dand@gmail.com", password_digest: "eofmrfwermf423", session_token: "34gwgfe4f")
-User.create( username: 'Brian', email: "obriann@gmail.com", password_digest: "asdf3f2f34f34", session_token: "4w5hg45g35g")
-User.create( username: 'Miloud', email: "tmiloud@gmail.com", password_digest: "2r23f24f43f34f", session_token: "34t334regg")
-User.create( username: 'Brahim', email: "rbrahim@gmail.com", password_digest: "2340r34fno43", session_token: "340s9fjernf")
-User.create( username: 'Marc', email: "kmarc@gmail.com", password_digest: "eo03fjfenr", session_token: "342erfwtg43f4")
-User.create( username: 'Antoine', email: "qantoine@gmail.com", password_digest: "r349rfj3oerfin", session_token: "45g345gergerf34")
+User.create( username: 'Akram', email: "aazzaiez@gmail.com", password: "guest123")
+User.create( username: 'Dan', email: "Dand@gmail.com", password: "guest123")
+User.create( username: 'Brian', email: "obriann@gmail.com", password: "guest123")
+User.create( username: 'Miloud', email: "tmiloud@gmail.com", password: "guest123")
+User.create( username: 'Brahim', email: "rbrahim@gmail.com", password: "guest123")
+User.create( username: 'Marc', email: "kmarc@gmail.com", password: "guest123")
+User.create( username: 'Antoine', email: "qantoine@gmail.com", password: "guest123")
+User.create( username: 'guest', email: "guest", password: "guest123")
 
 
 Car.create(

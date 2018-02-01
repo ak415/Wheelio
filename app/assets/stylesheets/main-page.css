@@ -1,0 +1,56 @@
+.main-page {
+
+}
+
+.nav-bar {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+.welcome-login-signup {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.welcome-login-signup a {
+  padding-left: 20px;
+}
+
+.wheelio-homepage-link {
+  /* text-decoration: none;
+  color: red;
+  right: 10px;
+  top: 10px */
+}
+
+.splash-page{
+  font-size: 50px;
+}
+
+.homepage-questions{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  width: 700px;
+  font-size: 25px;
+}
+.welcome-message{
+  /* position: absolute; */
+  /* left: 50%;
+  background: blue; */
+  flex-direction: row;
+  text-align: center;
+}
+
+.session-form {
+  background-color: yellow;
+}
