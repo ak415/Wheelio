@@ -14,5 +14,5 @@
  *= require_self
  */
 
-@import 'css_reset'
+@import 'css_reset';
 @import 'main-page'
