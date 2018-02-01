@@ -12,8 +12,8 @@ import { AuthRoute } from '../util/route_util';
 import splashPage from './home_page/splashpage';
 
 const App = () => (
-  <div class="main-page">
-    <div class="nav-bar">
+  <div className="main-page">
+    <div className="nav-bar">
       <Link to="/" className="wheelio-homepage-link">
         <h1>Wheelio</h1>
       </Link>

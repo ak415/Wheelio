@@ -3,14 +3,11 @@
 }
 
 .nav-bar {
-  background-color: lightgrey;
+  background-color: #990000;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-}
-
-h1 {
-  font-size: 40px;
+  color: white;
 }
 
 
@@ -24,12 +21,31 @@ h1 {
   padding-left: 20px;
 }
 
-.wheelio-homepage-link {
-  /* text-decoration: none;
-  color: red;
-  right: 10px;
-  top: 10px */
+.welcome-login-signup-effects a {
+  border: 3px solid #b30000;
 }
+
+.welcome-login-signup-effects:hover {
+	border: 3px dotted #b30000;
+	color: #b30000;
+	background: white;
+  vertical-align: middle;
+  padding: 10px;
+  font-weight: 700px;
+}
+
+
+
+.wheelio-homepage-link {
+  color: white;
+  font-size: 38px;
+}
+
+.wheelio-homepage-link:hover {
+  color: yellow;
+}
+
+
 
 .splash-page{
   font-size: 50px;
@@ -38,19 +54,58 @@ h1 {
 .homepage-questions{
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-left: 50px;
-  width: 700px;
+  padding: 20px 10px 40px 10px;
+  /* width: 700px; */
   font-size: 25px;
 }
+
+.hp-question {
+
+  width: 400px;
+  padding: 20px;
+  color: #404040;
+  border: 6px solid #660000 ;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 .welcome-message{
   /* position: absolute; */
   /* left: 50%;
   background: blue; */
-  flex-direction: row;
   text-align: center;
+  font-size: 65px;
+  color: #b30000;
+  font-family: 700px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .session-form {
   background-color: yellow;
+}
+
+.homepage-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  padding: 50px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #660000 ;
+
+  vertical-align: middle;
+}
+
+.search-input {
+  background: #fff3e6;
+  font-size: 20px;
+  width: 300px;
+  height: 40px;
+
+}
+
+.search-start {
+
 }

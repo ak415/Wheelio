@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 // ADDED DEMO USER WITH ONCLICK LOGIN
 const sessionLinks = (login) => (
   <nav className="welcome-login-signup">
-    <Link to="/login">Login</Link>
+    <Link className="welcome-login-signup-effects" to="/login">Login</Link>
     &nbsp;&nbsp;
-    <Link to="/signup">Sign Up</Link>
+    <Link className="welcome-login-signup-effects" to="/signup">Sign Up</Link>
     &nbsp;&nbsp;
-    <Link to="" onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
+    <Link className="welcome-login-signup-effects" to="" onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
   </nav>
 );
 
