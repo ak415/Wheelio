@@ -77,6 +77,17 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+.welcome-message{
+  /* position: absolute; */
+  /* left: 50%;
+  background: blue; */
+  text-align: center;
+  font-size: 60px;
+  color: #b30000;
+  font-family: 700px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 
 .homepage-search{
   display: flex;
