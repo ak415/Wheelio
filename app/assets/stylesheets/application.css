@@ -13,6 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-@import "css_reset";
-@import "main-page";
