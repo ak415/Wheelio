@@ -15,14 +15,15 @@ const App = () => (
   <div className="main-page">
     <div className="nav-bar">
       <Link to="/" className="wheelio-homepage-link">
-        <h1>Wheelio</h1>
+        <h1>WLO</h1>
       </Link>
       <GreetingContainer />
     </div>
     <AuthRoute exact path="/" component={splashPage} />
     <AuthRoute path="/login" component={SessionFormContainer} />
     <AuthRoute path="/signup" component={SessionFormContainer} />
-
+    <div className="footer">
+    </div>
   </div>
 );
 
