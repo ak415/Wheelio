@@ -17,6 +17,10 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log(this.props);
+    if (this.props.location.pathname !== nextProps.location.pathname ) {
+      this.props.clearError();
+    }
     if (nextProps.loggedIn) {
       this.props.history.push('/');
     }
@@ -31,15 +35,6 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
-  }
-
-  handleDemo(e) {
-    e.preventDefault();
-    const user = {
-      username: 'guest',
-      password: 'guest123'
-    };
     this.props.processForm({user});
   }
 
