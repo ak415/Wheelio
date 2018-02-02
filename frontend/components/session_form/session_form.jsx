@@ -58,7 +58,7 @@ class SessionForm extends React.Component {
 
     let greeting = "";
     if (this.props.formType === 'login') {
-      greeting = "Login to you account";
+      greeting = "Login to your account";
     } else {
       greeting = "Create a new account";
     }
@@ -82,7 +82,7 @@ class SessionForm extends React.Component {
             </label>
             {  (this.props.formType === 'signup') &&
               <label>Email:
-                <input type="password"
+                <input type="text"
                   value={this.state.email}
                   onChange={this.update('email')}
                   />
