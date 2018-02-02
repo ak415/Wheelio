@@ -12,8 +12,8 @@ class splashPage extends React.Component {
         </li>
       </ul>
       <div className="flex-box-welcome-message">
-        <div className="welcome-message">
-          <div>Wheelio gets the job done</div>
+        <div className="wheelio-logo">
+          <img src="https://github.com/aazaiez/Wheelio/blob/master/app/assets/images/wheelio_logo.jpg?raw=true"/>
         </div>
       </div>
 
@@ -24,7 +24,7 @@ class splashPage extends React.Component {
         <input className="search-input" type="text"/>
       </div>
     </div>
-    );
+  );
   }
 
 }

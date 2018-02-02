@@ -55,6 +55,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 100vh;
 }
 
 
@@ -72,8 +73,9 @@ html {
   border-radius: 25px;
   box-sizing: border-box;
   margin: 50px;
-  width: 100px
+  width: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: center;
 }
 
 .form-welcome-message{
@@ -92,22 +94,9 @@ html {
   justify-content: center;
   align-items: center;
 }
-.welcome-message{
-  /* position: absolute; */
-  /* left: 50%;
-  background: blue; */
-  text-align: center;
-  font-size: 34px;
-  color: #b30000;
-  font-family: 700px;
-  background: white;
-  border: 3px solid #660000 ;
-  border-radius: 8px;
-  box-sizing: border-box;
-  margin: 20px;
-  width: 450px;
-  font-weight: 700px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+.wheelio-logo{
+
 }
 
 
@@ -116,7 +105,7 @@ html {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   background: #990000;
   color: #fff3e6;
@@ -131,17 +120,18 @@ html {
   width: 300px;
   height: 40px;
   color: #660000;
-
-}
-.session-form-container{
-  width: 450px;
-  margin: 50px auto;
-  border: 3px solid #990000;
+  padding-left: 4px;
 }
 
 .homepage-search span{
   padding: 10px;
 }
+
+.session-form-container{
+  width: 450px;
+  margin: 50px auto;
+}
+
 
 .session-form {
   vertical-align: middle;
@@ -149,6 +139,7 @@ html {
   text-align: center;
   padding: 35px 40px 5px 40px;
   background: #fff3e6;
+  opacity: 0.9;
 }
 
 .session-form input[type="text"], input[type="password"]{
@@ -219,6 +210,7 @@ html {
  .login-inputs input {
    /* padding-right: 10px; */
    padding:0 8px;
+   opacity: 1000;
  }
 
 
@@ -227,7 +219,8 @@ html {
    color: grey;
    padding-top: 20px;
    text-align: right;
-   margin-right: -35px;
+   margin-right: -25px;
+   margin-bottom: 2px;
  }
 
  .alternative-option a {
