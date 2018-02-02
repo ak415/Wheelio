@@ -20,12 +20,12 @@ const App = () => (
       </Link>
       <GreetingContainer />
     </div>
-    <switch>
+    <Switch>
       <AuthRoute exact path="/" component={splashPage} />
       <AuthRoute  path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Redirect to="/"/>
-    </switch>
+    </Switch>
     <div className="footer">
     </div>
   </div>
