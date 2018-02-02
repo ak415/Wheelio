@@ -12,7 +12,7 @@ class splashPage extends React.Component {
           <h1 className="welcome-page-wheelio">WHEELIO</h1>
         </li>
         <li>
-          <p >Cars reviews from actual owners</p>
+          <p >Car reviews from actual owners</p>
         </li>
       </ul>
 
