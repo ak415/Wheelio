@@ -13,7 +13,6 @@
 .welcome-login-signup {
   display: flex;
   align-items: center;
-  cursor: pointer;
 
 }
 
@@ -24,17 +23,19 @@
 
 .welcome-login-signup-effects:hover {
   border-bottom:1px solid #fff;
+  cursor: pointer;
 }
 
 
 .home_page_signup {
   border: 1px solid white;
-   border-radius: 5px;
+  border-radius: 5px;
 }
 
 .home_page_signup:hover {
   background: white;
   color: black;
+  cursor: pointer;
 }
 
 
@@ -135,13 +136,14 @@ html {
 }
 
 .search-input {
-  background: transparent;
-  font-size: 32px;
-  height: 40px;
-  color: white;
+  background: white;
+  font-size: 24px;
+  height: 50px;
+  width: 300px;
+  color: grey;
   padding-left: 4px;
-  border-bottom: 2px solid white;
   text-align: center;
+  border-radius: 3px
 }
 
 .homepage-search span{
