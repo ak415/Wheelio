@@ -11,10 +11,10 @@ const sessionLinks = (login) => (
 );
 
 const personalGreeting = (currentUser, logout) => (
-	<hgroup>
-    <h2>Hi, {currentUser.username}!</h2>
+	<div className="guest-greeting">
+    <h2>Signed in as {currentUser.username}</h2>
     <button onClick={logout}>Log Out</button>
-	</hgroup>
+	</div>
 );
 
 const Greeting = ({currentUser, logout, login}) => (

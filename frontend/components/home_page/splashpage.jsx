@@ -6,22 +6,19 @@ class splashPage extends React.Component {
   render() {
     return (
     <div className="splash-page">
+
       <ul className="homepage-questions">
         <li>
-          Cars reviews from actual owners
+          <h1 className="welcome-page-wheelio">WHEELIO</h1>
+        </li>
+        <li>
+          <p >Cars reviews from actual owners</p>
         </li>
       </ul>
-      <div className="flex-box-welcome-message">
-        <div className="wheelio-logo">
-          <img src="https://github.com/aazaiez/Wheelio/blob/master/app/assets/images/wheelio_logo.jpg?raw=true"/>
-        </div>
-      </div>
 
       <div className="homepage-search">
-        <span className="search-start">
-          Your search starts here:
-        </span>
-        <input className="search-input" type="text"/>
+
+        <input className="search-input" type="text" placeholder="Your search starts here"/>
       </div>
     </div>
   );

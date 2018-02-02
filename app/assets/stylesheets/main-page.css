@@ -40,14 +40,17 @@
 
 
 .wheelio-homepage-link {
+  display: flex;
   color: white;
   font-size: 38px;
   padding: 10px;
 }
 
-.wheelio-homepage-link:hover {
-  color: #ffecb3;
+.wheelio-homepage-link div {
+  padding: 20px;
+
 }
+
 
 
 html {
@@ -59,25 +62,42 @@ html {
   min-height: 100vh;
 }
 
+.homepage-wheelio-name {
+  color: white;
+  font-size: 28;
+}
 
 .homepage-questions{
   display: flex;
-  justify-content: center;
-  /* width: 700px; */
+  align-items: center;
+  flex-direction: column;
 }
+
+
 
 .homepage-questions li {
   font-size: 28px;
-  width: 500px;
   padding: 10px;
   color: white;
   border-radius: 25px;
   box-sizing: border-box;
   margin: 50px;
-  width: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   text-align: center;
 }
+
+.homepage-questions h1 {
+  font-size: 45px;
+}
+
+.homepage-questions p {
+
+}
+
+
+
+
+
 
 .form-welcome-message{
   /* position: absolute; */
@@ -85,7 +105,7 @@ html {
   background: blue; */
   text-align: center;
   font-size: 25px;
-  color: #b30000;
+  color: black;
   font-family: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -108,7 +128,6 @@ html {
   font-size: 18px;
   margin: 100px auto 0 auto;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  background: #990000;
   color: #fff3e6;
   vertical-align: middle;
   width: 540px;
@@ -116,12 +135,13 @@ html {
 }
 
 .search-input {
-  background: #fff3e6;
-  font-size: 20px;
-  width: 300px;
+  background: transparent;
+  font-size: 32px;
   height: 40px;
-  color: #660000;
+  color: white;
   padding-left: 4px;
+  border-bottom: 2px solid white;
+  text-align: center;
 }
 
 .homepage-search span{
@@ -139,8 +159,6 @@ html {
   background: white;
   text-align: center;
   padding: 35px 40px 5px 40px;
-  background: #fff3e6;
-  opacity: 0.9;
 }
 
 .session-form input[type="text"], input[type="password"]{
@@ -154,19 +172,17 @@ html {
 }
 
 .session-form  input[type="submit"]{
-  padding: 1px 3px 1px 3px;
-  font-size: 14px;
-  width: 50px;
-  background: #620000;
-  margin: 20px;
+  padding: 4px 12px 4px 12px;
+  font-size: 18px;
+  background: black;
+  margin: 40px;
   color: white;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  border-radius: 7px;
 }
 
 .session-form  input[type="submit"]:hover {
-  background: white;
-  color: #620000;
+  background: lightgrey;
+  color: black;
   font-weight: 900px;
 }
 
@@ -211,7 +227,7 @@ html {
  .login-inputs input {
    /* padding-right: 10px; */
    padding:0 8px;
-   opacity: 1000;
+   border-bottom: 1px solid grey;
  }
 
 
@@ -225,16 +241,29 @@ html {
  }
 
  .alternative-option a {
-   color: #BE5A38;
+   color: black;
    font-weight: 700;
-   width: 50px;
+   width: 55px;
  }
 
+.guest-greeting{
+  display: flex;
+  align-items: center;
+}
+
+.guest-greeting button {
+  margin: 10px;
+  padding: 5px 13px 5px 13px;
+}
+
+.guest-greeting button:hover {
+  border-bottom:1px solid #fff;
+}
 
 
  .greeting {
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
    color: #3C1518;
-   margin-bottom: 20px;
+   margin: 20px;
    font-size: 20px;
  }
