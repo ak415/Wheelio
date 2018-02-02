@@ -3,7 +3,6 @@
 }
 
 .nav-bar {
-  background-color: #990000;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -15,18 +14,27 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
 }
 
 .welcome-login-signup a {
-  padding-left: 20px;
-}
-
-.welcome-login-signup-effects a {
-  border: 3px solid #b30000;
+    margin: 10px;
+    padding: 5px 13px 5px 13px;
 }
 
 .welcome-login-signup-effects:hover {
-  color: #ffecb3;
+  border-bottom:1px solid #fff;
+}
+
+
+.home_page_signup {
+  border: 1px solid white;
+   border-radius: 5px;
+}
+
+.home_page_signup:hover {
+  background: white;
+  color: black;
 }
 
 
@@ -42,7 +50,7 @@
 
 
 html {
-  background: url("https://github.com/aazaiez/Wheelio/blob/master/app/assets/images/home_page_image.jpg?raw=true") no-repeat center center fixed;
+  background: url("https://github.com/aazaiez/Wheelio/blob/master/app/assets/images/home_page_image2.jpg?raw=true") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,22 +61,18 @@ html {
 .homepage-questions{
   display: flex;
   justify-content: center;
-  padding: 20px 10px 40px 10px;
   /* width: 700px; */
-  font-size: 17px;
 }
 
-.hp-question {
-
-  width: 400px;
+.homepage-questions li {
+  font-size: 28px;
+  width: 500px;
   padding: 10px;
-  background: #AB2E2E;
-  color: #fff3e6;
-  opacity: 0.9;
-  border: 3px solid #660000 ;
+  color: white;
   border-radius: 25px;
   box-sizing: border-box;
-  margin: 15px;
+  margin: 50px;
+  width: 100px
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 

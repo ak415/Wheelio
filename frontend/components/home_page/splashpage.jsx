@@ -7,11 +7,8 @@ class splashPage extends React.Component {
     return (
     <div className="splash-page">
       <ul className="homepage-questions">
-        <li className="hp-question">
-          Looking into buying a car and could use some advice from current owners?
-        </li>
-        <li className="hp-question">
-          Willing to tell other people what you think of your current car?
+        <li>
+          Cars reviews from actual owners
         </li>
       </ul>
       <div className="flex-box-welcome-message">
