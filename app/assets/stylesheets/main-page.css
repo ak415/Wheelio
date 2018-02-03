@@ -269,3 +269,9 @@ html {
    margin: 20px;
    font-size: 20px;
  }
+
+ .car-description {
+   color: white;
+   padding: 20px;
+   font-size: 24px;
+ }
