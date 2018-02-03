@@ -105,3 +105,78 @@ Review.create(
   car_id: 3,
   user_rating: 1
 )
+
+Image.create(
+  car_id: 1,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_01_kxwtai.jpg"
+)
+
+Image.create(
+  car_id: 1,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg"
+)
+
+Image.create(
+  car_id: 1,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_04_sp4u9r.jpg"
+)
+
+Image.create(
+  car_id: 1,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_03_nat2jc.jpg"
+)
+
+Image.create(
+  car_id: 1,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_02_kws82v.jpg"
+)
+
+Image.create(
+  car_id: 2,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg"
+)
+
+Image.create(
+  car_id: 2,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_02_thkvv6.jpg"
+)
+
+Image.create(
+  car_id: 2,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_03_vv6abf.jpg"
+)
+
+Image.create(
+  car_id: 2,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_04_ns5g6e.jpg"
+)
+
+Image.create(
+  car_id: 2,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_05_udgeyx.jpg"
+)
+
+Image.create(
+  car_id: 3,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg"
+)
+
+Image.create(
+  car_id: 3,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_02_d3u1zs.jpg"
+)
+
+Image.create(
+  car_id: 3,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_03_kv0rgo.jpg"
+)
+
+Image.create(
+  car_id: 3,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_04_yp84mx.jpg"
+)
+
+Image.create(
+  car_id: 3,
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_05_bl4jjk.jpg"
+)

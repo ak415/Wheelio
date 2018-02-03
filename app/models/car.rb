@@ -9,4 +9,8 @@ class Car < ApplicationRecord
     through: :reviews,
     source: :user
 
+  has_many :images,
+    foreign_key: :car_id,
+    class_name: :Image
+
 end
