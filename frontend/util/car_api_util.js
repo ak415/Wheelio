@@ -8,9 +8,9 @@ export const fetchCars = data => {
 };
 
 
-export const fetchCar = id => {
-    $.ajax({
+export const fetchCar = id => (
+   $.ajax({
       method: 'GET',
       url: `api/cars/${id}`
-    });
-};
+    })
+);

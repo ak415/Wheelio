@@ -5,12 +5,14 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 import { clearError } from './actions/session_actions';
+import { fetchCar } from './actions/car_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
 //User  bootstrapping
 
   let store;
   window.clearError = clearError;
+  window.fetchCar = fetchCar;
   if (window.currentUser) {
     const preloadedState = { session: { currentUser: window.currentUser } };
     store = configureStore(preloadedState);
