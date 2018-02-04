@@ -28,6 +28,8 @@ Car.create(
     test of family sedans—this is a sensible machine with lots of space for people and cargo, decent manners, plenty of available technology, and an optional hybrid powertrain that makes it an
     upstanding four-wheeled citizen for the environmentally conscious.",
   mpg: 27,
+  mpg_city: 22,
+  mpg_highway: 33,
   acceleration: 7.8,
   price: 34000
 )
@@ -40,6 +42,8 @@ Car.create(
     four-cylinder makes 132 hp—140 hp in the LE Eco model—and drives the front wheels through a six-speed manual or a CVT. A 6.1-inch
     touchscreen infotainment system with Bluetooth is standard but can be upgraded to a 7.0-inch unit with navigation. ",
   mpg: 29,
+  mpg_city: 24,
+  mpg_highway: 34,
   acceleration: 8.6,
   price: 19000
 )
@@ -53,6 +57,8 @@ Car.create(
     has a 10-speed automatic. Both engines are smooth, refined, and available with a six-speed manual. Handling is composed but ready to play
     when you are. Adaptive cruise control, forward-collision warning, and lane-keeping assist are standard.",
   mpg: 30,
+  mpg_city: 22,
+  mpg_highway: 31,
   acceleration: 7.5,
   price: 28000
 )
