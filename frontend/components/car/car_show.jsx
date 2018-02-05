@@ -95,7 +95,7 @@ class CarShow extends React.Component {
     <div className="wrapper-padding">
       <h2 className="car-title">{this.props.car.year} {this.props.car.make} {this.props.car.model} </h2>
 
-    <div className="car-images-and-stats-flex">
+      <div className="car-images-and-stats-flex">
 
 
 
