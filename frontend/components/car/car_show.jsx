@@ -133,8 +133,16 @@ class CarShow extends React.Component {
 
          </div>
        </div>
-         <h2 className="description-title"> Description</h2>
-          <p className="car-description">{this.state.car.description}</p>
+        <div>
+            <h2 className="description-title"> Description</h2>
+            <p className="car-description">{this.state.car.description}</p>
+        </div>
+
+        <div>
+            <h2 className="description-title"> Reviews</h2>
+            <p className="car-description">REVIEWS HERE</p>
+        </div>
+
       </div>
     );
   }
