@@ -26,7 +26,6 @@ const App = () => (
       <AuthRoute  path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Route exact path="/cars/:carId" component={CarShowContainer}/>
-
       <Redirect to="/"/>
     </Switch>
     <div className="footer">

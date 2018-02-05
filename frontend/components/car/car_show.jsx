@@ -15,11 +15,15 @@ class CarShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchCar(this.props.match.params.carId);
-    console.log(this.props);
   }
 
+
+
+
   componentWillReceiveProps(nextProps){
-    console.log(`WILL RECEIVE PROPS RENDERING ${this.state}`);
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.props.fetchCar(nextProps.match.params.carId);
+    }
     this.setState(nextProps);
   }
 
@@ -52,25 +56,25 @@ class CarShow extends React.Component {
   }
 
   findAverageRating() {
-    if (this.state.car === undefined) {
+    if (this.props.car === undefined) {
       return null;
     }
     var result = 0;
-    for (var i = 0; i < this.state.car.reviews.length; i++) {
-      result += this.state.car.reviews[i].user_rating;
+    for (var i = 0; i < this.props.car.reviews.length; i++) {
+      result += this.props.car.reviews[i].user_rating;
     }
-    return Number((result/this.state.car.reviews.length).toFixed(1));
+    return Number((result/this.props.car.reviews.length).toFixed(1));
   }
 
   render() {
-    if (this.state.car === undefined) {
+    if (this.props.car === undefined) {
       return null;
     }
-    console.log(this.state);
+    console.log(this.props);
 
     let price= "$";
-    if (this.state.car.price){
-      price += this.state.car.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 });
+    if (this.props.car.price){
+      price += this.props.car.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 });
     }
 
     let iconStyle = {
@@ -88,7 +92,7 @@ class CarShow extends React.Component {
 
 
 
-    <h2 className="car-title">{this.state.car.year} {this.state.car.make} {this.state.car.model} </h2>
+    <h2 className="car-title">{this.props.car.year} {this.props.car.make} {this.props.car.model} </h2>
     <div className="wrapper-padding">
 
     <div className="car-images-and-stats-flex">
@@ -98,7 +102,7 @@ class CarShow extends React.Component {
         <div id="gallerywrapper">
           <div id="gallery">
             <div id="pic1">
-              <img src={this.state.car.images[this.state.carImageIndex].image_url} className="car-images"/>
+              <img src={this.props.car.images[this.state.carImageIndex].image_url} className="car-images"/>
               <a onClick={this.handleImageChangeNext}  className="next" ><i className="fas fa-chevron-right" style={iconStyleNext}></i></a>
               <a onClick={this.handleImageChangePrevious}  className="previous" ><i className="fas fa-chevron-left" style={iconStyleNext}></i></a>
             </div>
@@ -112,7 +116,7 @@ class CarShow extends React.Component {
 
 
              <div className="wheelio-score-component-flex">
-                  <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517711977/wheelio_black_logo_zwheh6.svg" className="wheelio-logo-black" />
+                  <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517711977/wheelio_black_logo_zwheh6.svg" className="wheelio-logo-black" style={{userSelect: 'none'}}/>
 
                      <div className="next-to-wheelio-logo">
                        <span className="average-car-score-string"> WHEELIO Score</span>
@@ -134,7 +138,7 @@ class CarShow extends React.Component {
                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517707279/gas-station-black_isopjq.svg" className="mpg-logo" />
                          <div className="next-to-mpg">
                             <span className="mpg-string"> EPA (MPG) </span>
-                            <span className="actual-mpg"> {this.state.car.mpg_city}/{this.state.car.mpg_highway}</span>
+                            <span className="actual-mpg"> {this.props.car.mpg_city}/{this.props.car.mpg_highway}</span>
                         </div>
                     </div>
 
@@ -146,7 +150,7 @@ class CarShow extends React.Component {
                   <i className="fas fa-stopwatch" style={iconStyle}></i>
                   <div className="next-to-zeroto60">
                     <span className="zeroto60-string"> 0-60 MPH</span>
-                    <span className="actual-zeroto60">{this.state.car.acceleration}s</span>
+                    <span className="actual-zeroto60">{this.props.car.acceleration}s</span>
                   </div>
                </div>
 
@@ -155,7 +159,7 @@ class CarShow extends React.Component {
                 <i className="fas fa-tachometer-alt" style={{fontSize: '80px'}}></i>
                  <div className="next-to-top_speed">
                    <span className="top_speed-string"> TOP SPEED</span>
-                   <span className="actual-top_speed">{this.state.car.top_speed}mph</span>
+                   <span className="actual-top_speed">{this.props.car.top_speed}mph</span>
                  </div>
               </div>
 
@@ -172,7 +176,7 @@ class CarShow extends React.Component {
 
         <div>
             <h2 className="description-title"> Description</h2>
-            <p className="car-description">{this.state.car.description}</p>
+            <p className="car-description">{this.props.car.description}</p>
         </div>
 
         <div className="review-outline">
@@ -180,12 +184,12 @@ class CarShow extends React.Component {
         <div>
 
           <div className="write-review-flex">
-            <h2 className="description-title">{this.state.car.make} {this.state.car.model} Reviews</h2>
+            <h2 className="description-title">{this.props.car.make} {this.props.car.model} Reviews</h2>
             <a className="submit-review" >Write a Review</a>
           </div>
 
 
-          {this.state.car.reviews.map(review =>
+          {this.props.car.reviews.map(review =>
 
           <div className="review-content-flex">
 

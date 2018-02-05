@@ -322,7 +322,7 @@ html {
  .score-price-mpg-0to60-flex {
    color: black;
    font-size: 30px;
-   display: inline-flex;
+   display: flex;
    flex-direction: column;
    align-items: flex-start;
  }
@@ -479,6 +479,7 @@ html {
 
 
  #gallerywrapper {
+   display: flex;
     width:auto;
     height:450px;
     margin: 50px 10px 50px 50px;
