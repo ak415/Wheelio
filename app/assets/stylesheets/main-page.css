@@ -313,8 +313,10 @@ html {
    display: flex;
    justify-content: center;
    align-items: center;
-   margin: 10px 200px 60px 0px;
-   transform: scale(0.65,0.65);
+   align-content: center;
+   margin: 10px 0px 60px 0px;
+   transform: scale(0.7,0.7);
+   width: 100%;
  }
 
  .score-price-mpg-0to60-flex {
@@ -327,7 +329,7 @@ html {
 
 .wrapper-padding {
   padding: 0px 200px 0px 200px;
-  margin: -142px 0px 0px -50px
+  margin: -142px 0px 0px -50px;
 }
 
 
@@ -611,11 +613,12 @@ html {
   flex-direction: row;
   border-top:1px solid #b3b3b3;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .review-content {
   margin: 20px 0px 0px 0px;
-  width: 765px;
+  width: 100%;
 }
 .review-rating-flex{
   display: flex;
@@ -655,8 +658,9 @@ html {
   border-radius: 5px;
   display: inline-block;
   width: 60px;
-  font-weight: 900px;
+  font-weight: bold;
   font-size: 14px;
+
 }
 
 .review-button:hover {
@@ -669,5 +673,10 @@ html {
 .reaction-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  margin: 20px 0px 0px 0px;
+}
+
+.description-reviews-wrap {
+  width: 100%;
 }

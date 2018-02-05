@@ -59,7 +59,7 @@ class CarShow extends React.Component {
     for (var i = 0; i < this.state.car.reviews.length; i++) {
       result += this.state.car.reviews[i].user_rating;
     }
-    return Number((result/this.state.car.reviews.length).toFixed(1)); 
+    return Number((result/this.state.car.reviews.length).toFixed(1));
   }
 
   render() {
@@ -166,15 +166,22 @@ class CarShow extends React.Component {
 
          </div>
        </div>
+
+
+
+
         <div>
             <h2 className="description-title"> Description</h2>
             <p className="car-description">{this.state.car.description}</p>
         </div>
 
         <div className="review-outline">
+
+        <div>
+
           <div className="write-review-flex">
             <h2 className="description-title">{this.state.car.make} {this.state.car.model} Reviews</h2>
-            <a onClick=""  className="submit-review" >Write a Review</a>
+            <a className="submit-review" >Write a Review</a>
           </div>
 
 
@@ -196,27 +203,29 @@ class CarShow extends React.Component {
 
                 <div className="reaction-buttons">
                   <div>
-                    <a onClick=""  className="review-button" >Helpful</a>
+                    <a className="review-button" >Helpful</a>
                   </div>
                   <div>
-                    <a onClick=""  className="review-button" >Funny</a>
+                    <a className="review-button" >Funny</a>
                   </div>
                   <div>
-                    <a onClick=""  className="review-button" >Cool</a>
+                    <a className="review-button" >Cool</a>
                   </div>
                 </div>
+
+
               </div>
           </div>
         )}
 
 
 
-
+        </div>
 
         </div>
 
+        </div>
 
-      </div>
 
       </div>
     );
