@@ -13,4 +13,5 @@ class Car < ApplicationRecord
     foreign_key: :car_id,
     class_name: :Image
 
+
 end

@@ -10,6 +10,7 @@ class CarShow extends React.Component {
     this.handleImageChangeNext = this.handleImageChangeNext.bind(this);
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
     this.findUsername = this.findUsername.bind(this);
+    this.findAverageRating = this.findAverageRating.bind(this);
   }
 
   componentDidMount() {
@@ -48,6 +49,17 @@ class CarShow extends React.Component {
       }
     }
     return result;
+  }
+
+  findAverageRating() {
+    if (this.state.car === undefined) {
+      return null;
+    }
+    var result = 0;
+    for (var i = 0; i < this.state.car.reviews.length; i++) {
+      result += this.state.car.reviews[i].user_rating;
+    }
+    return Number((result/this.state.car.reviews.length).toFixed(1)); 
   }
 
   render() {
@@ -104,7 +116,7 @@ class CarShow extends React.Component {
 
                      <div className="next-to-wheelio-logo">
                        <span className="average-car-score-string"> WHEELIO Score</span>
-                       <span className="actual-car-score"> 9.5/10</span>
+                       <span className="actual-car-score"> {this.findAverageRating()}/10</span>
                     </div>
             </div>
 
