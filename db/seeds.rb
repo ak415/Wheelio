@@ -19,7 +19,7 @@ User.create( username: 'Antoine', email: "qantoine@gmail.com", password: "guest1
 User.create( username: 'guest', email: "guest", password: "guest123")
 
 
-Car.create(
+Car.create!(
   year: 2016,
   make: "Toyota",
   model: "Camry",
@@ -35,7 +35,7 @@ Car.create(
   price: 34000
 )
 
-Car.create(
+Car.create!(
   year: 2016,
   make: "Toyota",
   model: "Corolla",
@@ -50,7 +50,7 @@ Car.create(
   price: 19000
 )
 
-Car.create(
+Car.create!(
   year: 2016,
   make: "Honda",
   model: "Accord",

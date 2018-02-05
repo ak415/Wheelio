@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180203001536) do
+ActiveRecord::Schema.define(version: 20180205224449) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,11 +23,11 @@ ActiveRecord::Schema.define(version: 20180203001536) do
     t.float "mpg", null: false
     t.float "mpg_city"
     t.float "mpg_highway"
-    t.float "top_speed"
     t.float "acceleration", null: false
     t.float "price", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "top_speed"
     t.index ["make"], name: "index_cars_on_make"
     t.index ["model"], name: "index_cars_on_model"
     t.index ["year"], name: "index_cars_on_year"
