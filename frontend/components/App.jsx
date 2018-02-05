@@ -16,7 +16,7 @@ const App = () => (
   <div className="main-page">
     <div className="nav-bar">
       <Link to="/" className="wheelio-homepage-link">
-        <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517609839/wheelio_logo_ptbkmi.svg"/>
+        <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517710944/wheelio_second_logo_di3ikl.svg" className="wheelio-logo-white"/>
         <div>WLO</div>
       </Link>
       <GreetingContainer />
@@ -26,6 +26,7 @@ const App = () => (
       <AuthRoute  path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Route exact path="/cars/:carId" component={CarShowContainer}/>
+
       <Redirect to="/"/>
     </Switch>
     <div className="footer">

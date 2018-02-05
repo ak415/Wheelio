@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20180203001536) do
     t.float "mpg", null: false
     t.float "mpg_city"
     t.float "mpg_highway"
+    t.float "top_speed"
     t.float "acceleration", null: false
     t.float "price", null: false
     t.datetime "created_at", null: false

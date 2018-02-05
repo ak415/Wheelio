@@ -31,6 +31,7 @@ Car.create(
   mpg_city: 22,
   mpg_highway: 33,
   acceleration: 7.8,
+  top_speed: 128,
   price: 34000
 )
 
@@ -45,6 +46,7 @@ Car.create(
   mpg_city: 24,
   mpg_highway: 34,
   acceleration: 8.6,
+  top_speed: 111,
   price: 19000
 )
 
@@ -60,6 +62,7 @@ Car.create(
   mpg_city: 22,
   mpg_highway: 31,
   acceleration: 7.5,
+  top_speed: 132,
   price: 28000
 )
 
