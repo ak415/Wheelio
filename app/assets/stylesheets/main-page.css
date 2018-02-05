@@ -283,7 +283,7 @@ html {
    padding: 10px 10px 0px 10px ;
    font-size: 30px;
    font-weight: 900;
-   margin: -150px 0px 0px 0px;
+   margin: 40px 0px 0px 0px;
  }
 
  .car-description {
@@ -298,24 +298,22 @@ html {
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
    background: white;
    width: 100%;
+   margin: 150px 0 0 0;
  }
 
 
  .car-title {
    color: black;
-   font-size: 40px;
-   padding: 20px 0px 30px 10px;
-   margin: 0px 0px 0px 60px;
-   font-weight: 700px;
+   font-size: 45px;
+   padding: 40px 0px 30px 0px;
+   margin: 0px 0px 0px 10px;
+   font-weight: 900;
  }
 
  .car-images-and-stats-flex {
    display: flex;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   margin: 10px 0px 60px 0px;
-   transform: scale(0.7,0.7);
+   flex-direction: row;
+   margin: -140px 0 120px 0;
    width: 100%;
  }
 
@@ -325,6 +323,8 @@ html {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
+   margin: 30px 10px 10px -30px;
+   width: 100%;
  }
 
 .wrapper-padding {
@@ -337,7 +337,7 @@ html {
    display: flex;
    flex-direction: row;
    align-items: center;
-   margin: 0px 20px 20px 20px;
+   margin: 0px 20px 20px 0px;
  }
 
  .next-to-dollar-sign {
@@ -361,7 +361,7 @@ html {
    display: flex;
    flex-direction: row;
    align-items: center;
-   margin: 0px 0px 0px 20px;
+   margin: 0px 0px 0px 0px;
  }
 
  .top-speed-component-flex {
@@ -429,7 +429,7 @@ html {
    display: flex;
    flex-direction: row;
    align-items: center;
-   margin: 40px 0px 0px 20px;
+   margin: 40px 0px 0px 0px;
  }
 
  .next-to-wheelio-logo {
@@ -479,10 +479,10 @@ html {
 
 
  #gallerywrapper {
-   display: flex;
+    display: flex;
     width:auto;
     height:450px;
-    margin: 50px 10px 50px 50px;
+    margin: 50px 10px 50px 0px;
     position:relative;
     font-family:verdana, arial, sans-serif;
 }
@@ -493,7 +493,7 @@ html {
   height: 450px;
   width:auto;
   margin: 20px;
-  margin: 50px 25px 30px 100px;
+  margin: 50px 0px 30px 10px;
 }
 
 
@@ -502,18 +502,21 @@ html {
     overflow:hidden;
     text-align:center;
     height: 540px;
+    display: flex;
+    width: 100%;
+    flex:1;
 }
 
 #gallerywrapper #gallery div {
     width:640px; height:900px;
-    padding:30px;
+    padding:30px 30px 0 0;
     position:relative;
 }
 
 #gallerywrapper #gallery div img {
     clear:both;
     display:block;
-    margin:0 auto;
+    margin: 20px 20px 20px 0px auto;
     border:0;
 }
 
@@ -540,7 +543,7 @@ html {
 
 #gallery .previous{
   float:left;
-  margin: -250px 0px 50px 28px;
+  margin: -270px 0px 50px 18px;
 
   display:none;
   text-decoration:none;
@@ -562,7 +565,7 @@ html {
 #gallery .next{
     display:none;
     float:right;
-    margin: -250px 28px 0px 0px;
+    margin: -270px 38px 0px 0px;
     text-decoration:none;
     z-index: 1;
     position:relative;

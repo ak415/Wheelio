@@ -92,8 +92,8 @@ class CarShow extends React.Component {
 
 
 
-    <h2 className="car-title">{this.props.car.year} {this.props.car.make} {this.props.car.model} </h2>
     <div className="wrapper-padding">
+      <h2 className="car-title">{this.props.car.year} {this.props.car.make} {this.props.car.model} </h2>
 
     <div className="car-images-and-stats-flex">
 
@@ -184,7 +184,7 @@ class CarShow extends React.Component {
         <div>
 
           <div className="write-review-flex">
-            <h2 className="description-title">{this.props.car.make} {this.props.car.model} Reviews</h2>
+            <h2 className="description-title">Reviews</h2>
             <a className="submit-review" >Write a Review</a>
           </div>
 
