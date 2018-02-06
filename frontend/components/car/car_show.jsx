@@ -11,6 +11,7 @@ class CarShow extends React.Component {
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
     this.findUsername = this.findUsername.bind(this);
     this.findAverageRating = this.findAverageRating.bind(this);
+    this.findImage = this.findImage.bind(this);
   }
 
   componentDidMount() {
@@ -66,6 +67,15 @@ class CarShow extends React.Component {
     return Number((result/this.props.car.reviews.length).toFixed(1));
   }
 
+  findImage() {
+    if (this.props.car.images === undefined) {
+      return null;
+    }
+    else {
+    return this.props.car.images[this.props.carImageIndex].image_url;
+    }
+  }
+
   render() {
     if (this.props.car === undefined) {
       return null;
@@ -102,7 +112,7 @@ class CarShow extends React.Component {
         <div id="gallerywrapper">
           <div id="gallery">
             <div id="pic1">
-              <img src={this.props.car.images[this.state.carImageIndex].image_url} className="car-images"/>
+              <img src={this.findImage()} className="car-images"/>
               <a onClick={this.handleImageChangeNext}  className="next" ><i className="fas fa-chevron-right" style={iconStyleNext}></i></a>
               <a onClick={this.handleImageChangePrevious}  className="previous" ><i className="fas fa-chevron-left" style={iconStyleNext}></i></a>
             </div>

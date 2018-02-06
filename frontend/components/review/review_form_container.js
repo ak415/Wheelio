@@ -5,12 +5,14 @@ import ReviewForm from './review_form';
 
 const mapStateToProps = (state) => {
   return {
-
+    a: 0
   };
 };
 
-const mapDispatchToProps = (dispatch, { location }) => {
-
+const mapDispatchToProps = () => {
+  return {
+    c: 0
+  };
 };
 
 export default withRouter( connect(

@@ -1,6 +1,8 @@
 import React from 'react';
 
 
+
+
 class splashPage extends React.Component {
 
   render() {

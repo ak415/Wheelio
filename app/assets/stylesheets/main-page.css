@@ -322,7 +322,8 @@ html {
    font-size: 30px;
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
+   justify-content: flex-end;
    margin: 40px 10px 10px -50px;
    width: 100%;
  }
@@ -637,7 +638,7 @@ html {
   margin: 20px 5px 5px 10px;
   border-right:1px solid #b3b3b3;
   padding: 10px 25px 5px 10px;
-  width: 100px;
+  width: 150px;
 }
 
 .reviewer-name {

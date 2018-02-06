@@ -1,5 +1,4 @@
 class Api::ReviewsController < ApplicationController
-  before_action :require_logged_in
   def create
     @review = Review.new(review_params)
     @review.user_id = current_user.id
@@ -32,6 +31,6 @@ class Api::ReviewsController < ApplicationController
 
   private
   def review_params
-    params.require(:review).permit(:body, :user_rating, :upvotes)
+    params.require(:review).permit(:body, :car_id, :user_id, :user_rating)
   end
 end
