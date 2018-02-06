@@ -638,7 +638,7 @@ html {
   margin: 20px 5px 5px 10px;
   border-right:1px solid #b3b3b3;
   padding: 10px 25px 5px 10px;
-  width: 150px;
+  min-width: 100px;
 }
 
 .reviewer-name {

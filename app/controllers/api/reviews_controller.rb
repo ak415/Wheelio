@@ -10,14 +10,22 @@ class Api::ReviewsController < ApplicationController
     end
   end
 
+
+  def index
+    if params[:car_id]
+      @reviews = Car.find_by(id: params[:car_id]).reviews
+      render :index
+    end
+  end
+
   def show
     @review = Review.find_by(id: params[:id])
     render :show
   end
 
   def update
-    @review = current_user.reviews.find_by(id: params[:id])
-    if @review.update_attributes(review_params)
+    @review = current_user.reviews.find(params[:id])
+    if @review.update(review_params)
       render :show
     else
       render json: @review.errors.full_messages
