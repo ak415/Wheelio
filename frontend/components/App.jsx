@@ -28,6 +28,8 @@ const App = () => (
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Route exact path="/cars/:carId" component={CarShowContainer}/>
       <Route exact path="/cars/:carId/reviews" component={ReviewFormContainer}/>
+      <Route path="/cars/:carId/reviews/new" component={ReviewFormContainer}/>
+      <Route path="/cars/:carId/reviews/:reviewId/edit" component={ReviewFormContainer}/>
       <Redirect to="/"/>
     </Switch>
     <div className="footer">
