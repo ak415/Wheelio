@@ -20,8 +20,10 @@ const ReviewReducer = (oldState = {}, action) => {
       delete newState[action.reviewId];
       return newState;
     case RECEIVE_CAR:
-      return action.car.reviews || {};
+      return action.payload.reviews || {};
+
     default:
+    console.log(action.type);
       return oldState;
   }
 };

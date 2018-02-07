@@ -116,37 +116,38 @@ class ReviewForm extends React.Component {
 
 
 
+
         return (
-          <div className="session-form-container">
+          <div className="post-review-page">
+            <div className="post-review-wrapper-padding">
 
-            <h2>  HELLO HOUSTON THIS IS THE REVIEWS FORM TEST</h2>
-            <form onSubmit={this.handleSubmit} className="session-form">
-              <h3 className="form-welcome-message"> Post a Review   </h3>
-              <div className="greeting">
-                <h2>REVIEW FORM</h2>
-              </div>
-              <div className="login-inputs">
-                <label>Rating:
-                  <input type="text"
-                    value={this.state.ratingValue}
-                    onChange={this.ratingChange}
-                  />
-                </label>
+                  <form onSubmit={this.handleSubmit} className="review-form">
+                    <div className="review-form-center">
+                       <div className="review-form-title">
+                            <span>{this.props.car.year} {this.props.car.make} {this.props.car.model} Review</span>
+                       </div>
 
-                <label>
-                  Body
-                 <textarea
-                   onChange={this.bodyChange}
-                  value={this.state.bodyValue} />
-               </label>
+                       <div className="review-form-rating">
+                            <label>Overall Rating:
+                                <input type="text" value={this.state.ratingValue} onChange={this.ratingChange}/>
+                            </label>
+                       </div>
+
+                      <div className="review-submit-content">
+                           <label>
+                             <textarea onChange={this.bodyChange} value={this.state.bodyValue} placeholder="Your review helps other drivers learn about your car."/>
+                          </label>
+                      </div>
 
 
+                      <div className="review-submit-button">
+                        <input type="submit" value="Submit" />
+                      </div>
 
-              </div>
-              <div className="submit-button">
-                <input type="submit" value="Submit" />
-              </div>
-            </form>
+                </div>
+                  </form>
+
+            </div>
 
           </div>
         );

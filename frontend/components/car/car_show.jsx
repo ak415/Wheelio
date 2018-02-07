@@ -6,10 +6,9 @@ class CarShow extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = this.props.car || {};
+    this.state = {};
     this.handleImageChangeNext = this.handleImageChangeNext.bind(this);
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
-    this.findUsername = this.findUsername.bind(this);
     this.findAverageRating = this.findAverageRating.bind(this);
   }
 
@@ -42,32 +41,20 @@ class CarShow extends React.Component {
     });
   }
 
-  findUsername(userId) {
-    if (this.state.car === undefined) {
-      return null;
-    }
-    var result = "";
-    for (var i = 0; i < this.state.car.reviewers.length; i++) {
-      if (this.state.car.reviewers[i].id === userId) {
-        result = this.state.car.reviewers[i].username;
-      }
-    }
-    return result;
-  }
 
   findAverageRating() {
     if (this.props.car === undefined) {
       return null;
     }
     var result = 0;
-    for (var i = 0; i < this.props.car.reviews.length; i++) {
-      result += this.props.car.reviews[i].user_rating;
+    for (var i = 0; i < this.props.reviews.length; i++) {
+      result += this.props.reviews[i].user_rating;
     }
-    return Number((result/this.props.car.reviews.length).toFixed(1));
+    return Number((result/this.props.reviews.length).toFixed(1));
   }
 
   render() {
-    if (this.props.car === undefined || this.props.car.images === undefined || this.state.carImageIndex === undefined) {
+    if (this.props.car === undefined || this.props.car.images === undefined || this.state.carImageIndex === undefined || this.props.reviews  === undefined || this.props.currentUser  === undefined) {
       return null;
     }
     console.log(this.props);
@@ -185,16 +172,27 @@ class CarShow extends React.Component {
 
           <div className="write-review-flex">
             <h2 className="description-title">Reviews</h2>
-            <a className="submit-review" >Write a Review</a>
+            <Link className="submit-review" to={`/cars/${this.props.car.id}/reviews/new`} >Write a Review</Link>
           </div>
 
 
-          {this.props.car.reviews.map(review =>
+          {this.props.reviews.map(review =>
 
           <div className="review-content-flex">
 
               <div className="reviewer-corner" >
-                <p className="reviewer-name">{this.findUsername(review.user_id)}</p>
+                <div>
+                    <p className="reviewer-name">{review.username}</p>
+                </div>
+
+
+                {( review !== null) && (review.username === this.props.currentUser.username ) &&
+                  <div className="optional-buttons-flex">
+                      <Link className="edit-review" to={`/cars/${this.props.car.id}/reviews/${review.id}/edit`} >Edit Review</Link>
+                      <Link className="delete-review" to={`/cars/${this.props.car.id}/reviews/delete`} >Delete Review</Link>
+                </div>
+                }
+
               </div>
 
               <div className="review-rating-flex">

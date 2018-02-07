@@ -23,7 +23,7 @@ const mapStateToProps = (state, ownProps) => {
       currentUser: state.session.currentUser,
     };
   } else {
-    let reviewToUse = state.reviews[ownProps.match.params.reviewId];
+    let reviewToUse = state.review[ownProps.match.params.reviewId];
     let review = {};
     if (reviewToUse) {
       for (var key in reviewToUse) {
