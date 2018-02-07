@@ -8,7 +8,6 @@ export const receiveCar = payload => ({
   payload
 });
 
-
 // THUNK ACTION
 export const fetchCar = carId => dispatch => (
   CarAPIUtil.fetchCar(carId)

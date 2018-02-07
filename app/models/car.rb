@@ -12,5 +12,9 @@ class Car < ApplicationRecord
   has_many :images,
     foreign_key: :car_id,
     class_name: :Image
- 
+
+
+    def self.search(query)
+      Car.where("LOWER(cars.make) like ?", "%#{query}%")
+  end
 end
