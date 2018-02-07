@@ -6,8 +6,6 @@ import CarShow from './car_show';
 import {  withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-console.log("mapping");
-
   let car = state.car[ownProps.match.params.carId];
   return {
     car,

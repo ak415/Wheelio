@@ -23,7 +23,6 @@ const ReviewReducer = (oldState = {}, action) => {
       return action.payload.reviews || {};
 
     default:
-    console.log(action.type);
       return oldState;
   }
 };

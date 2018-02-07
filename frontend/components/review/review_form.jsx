@@ -91,7 +91,6 @@ class ReviewForm extends React.Component {
 
 
     ratingChange(event) {
-      console.log("CHANGING RA");
     this.setState({ ratingValue: event.target.value });
     }
 
@@ -101,7 +100,6 @@ class ReviewForm extends React.Component {
 
 
   update(type){
-    console.log(this.state);
     return (e) =>(
       this.setState({[type]: e.target.value})
     );

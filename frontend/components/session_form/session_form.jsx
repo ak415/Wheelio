@@ -13,7 +13,6 @@ class SessionForm extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log(this.props);
     this.props.clearError();
   }
 
@@ -22,7 +21,6 @@ class SessionForm extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(this.props);
     if (this.props.location.pathname !== nextProps.location.pathname ) {
       this.props.clearError();
       this.setState({

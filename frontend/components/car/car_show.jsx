@@ -13,7 +13,6 @@ class CarShow extends React.Component {
   }
 
   componentDidMount() {
-    console.log("MOUNTING");
     this.props.fetchCar(this.props.match.params.carId);
   }
 
@@ -58,8 +57,6 @@ class CarShow extends React.Component {
     if (this.props.car === undefined || this.props.car.images === undefined || this.state.carImageIndex === undefined || this.props.reviews  === undefined || this.props.currentUser  === undefined) {
       return null;
     }
-    console.log(this.props);
-
     let price= "$";
     if (this.props.car.price){
       price += this.props.car.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 });
