@@ -13,14 +13,15 @@ class CarShow extends React.Component {
   }
 
   componentDidMount() {
+    console.log("MOUNTING");
     this.props.fetchCar(this.props.match.params.carId);
   }
 
 
 
 
-  componentWillReceiveProps(nextProps){
-    if (this.props.location.pathname !== nextProps.location.pathname) {
+  componentWillReceiveProps(nextProps) {
+    if (this.props.location.pathname !== nextProps.location.pathname || this.props.reviews.length !== nextProps.reviews.length) {
       this.props.fetchCar(nextProps.match.params.carId);
     }
     this.setState(nextProps);
@@ -189,7 +190,7 @@ class CarShow extends React.Component {
                 {( review !== null) && (review.username === this.props.currentUser.username ) &&
                   <div className="optional-buttons-flex">
                       <Link className="edit-review" to={`/cars/${this.props.car.id}/reviews/${review.id}/edit`} >Edit Review</Link>
-                      <Link className="delete-review" to={`/cars/${this.props.car.id}/reviews/delete`} >Delete Review</Link>
+                      <a className="delete-review" onClick={() => this.props.deleteReview(review.id)} >Delete Review</a>
                 </div>
                 }
 

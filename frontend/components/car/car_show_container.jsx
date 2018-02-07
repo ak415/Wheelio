@@ -1,11 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchCar } from '../../actions/car_actions';
+import { deleteReview } from '../../actions/review_actions';
 import CarShow from './car_show';
+import {  withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
+console.log("mapping");
 
-  console.log(ownProps);
   let car = state.car[ownProps.match.params.carId];
   return {
     car,
@@ -19,7 +21,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    fetchCar: (carId) => dispatch(fetchCar(carId))
+    fetchCar: (carId) => dispatch(fetchCar(carId)),
+    deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
   };
 };
 

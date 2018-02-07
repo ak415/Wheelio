@@ -15,9 +15,9 @@ const receiveReview = review => ({
   type: RECEIVE_REVIEW,
   review
 });
-const removeReview = review => ({
+const removeReview = reviewId => ({
   type: REMOVE_REVIEW,
-  review
+  reviewId
 });
 
 
