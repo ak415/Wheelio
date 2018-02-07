@@ -28,7 +28,7 @@ export const createReview = review => {
 export const updateReview = review => {
   return $.ajax({
     method: 'PATCH',
-    url: `api/cars/${review.car_id}/reviews`,
+    url: `api/cars/${review.car_id}/reviews/${review.id}`,
     data: { review }
   });
 };

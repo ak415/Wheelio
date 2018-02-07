@@ -23,17 +23,14 @@ const mapStateToProps = (state, ownProps) => {
       currentUser: state.session.currentUser,
     };
   } else {
-    let reviewToUse = state.review[ownProps.match.params.reviewId];
     let review = {};
-    if (reviewToUse) {
-      for (var key in reviewToUse) {
-        if (reviewToUse[key] === null) {
-          review[key] = "";
-        } else {
-          review[key] = reviewToUse[key];
-        }
-      }
+
+    if  (state.reviews[ownProps.match.params.reviewId]) {
+      review = state.reviews[ownProps.match.params.reviewId];
     }
+    let id;
+    review[id] = ownProps.match.params.reviewId;
+
     return {
       formType: "edit",
       review,

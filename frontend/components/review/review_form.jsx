@@ -11,12 +11,13 @@ class ReviewForm extends React.Component {
    this.state = {
      bodyValue: this.props.review.body,
      ratingValue: this.props.review.user_rating,
+     id: this.props.review.id
    };
    this.handleSubmit = this.handleSubmit.bind(this);
    this.bodyChange = this.bodyChange.bind(this);
-  this.updateAllState = this.updateAllState.bind(this);
-     this.clearState = this.clearState.bind(this);
-     this.ratingChange = this.ratingChange.bind(this);
+   this.updateAllState = this.updateAllState.bind(this);
+   this.clearState = this.clearState.bind(this);
+   this.ratingChange = this.ratingChange.bind(this);
  }
 
  updateAllState() {
@@ -69,6 +70,7 @@ class ReviewForm extends React.Component {
       } else {
         this.props
           .updateReview({
+            id: this.props.review.id,
             body: this.state.bodyValue,
             user_rating: this.state.ratingValue,
             car_id: this.props.match.params.carId,
