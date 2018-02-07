@@ -15,6 +15,6 @@ class Car < ApplicationRecord
 
 
     def self.search(query)
-      Car.where("LOWER(cars.make) like ?", "%#{query}%")
+      Car.where("(cars.make) ilike ?", "%#{query}%") 
   end
 end

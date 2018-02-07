@@ -3,7 +3,8 @@ import {  withRouter } from 'react-router-dom';
 import ReviewForm from './review_form';
 import { fetchCar } from '../../actions/car_actions';
 import { fetchReviews, fetchReview, createReview, updateReview, deleteReview } from '../../actions/review_actions';
-import { login, logout, signup, clearError } from '../../actions/session_actions';
+import { login, logout, signup } from '../../actions/session_actions';
+import { clearError } from '../../actions/review_actions';
 
 
 const mapStateToProps = (state, ownProps) => {
