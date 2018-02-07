@@ -18,6 +18,7 @@ class ReviewForm extends React.Component {
    this.updateAllState = this.updateAllState.bind(this);
    this.clearState = this.clearState.bind(this);
    this.ratingChange = this.ratingChange.bind(this);
+   this.renderErrors = this.renderErrors.bind(this);
  }
 
  updateAllState() {
@@ -25,6 +26,18 @@ class ReviewForm extends React.Component {
      bodyValue: this.props.review.body,
      ratingValue: this.props.review.rating,
    });
+ }
+
+ renderErrors() {
+   return(
+     <ul>
+       {this.props.errors.map((error, i) => (
+         <li key={`error-${i}`}>
+           {error}
+         </li>
+       ))}
+     </ul>
+   );
  }
 
   componentDidMount() {
@@ -125,6 +138,10 @@ class ReviewForm extends React.Component {
                     <div className="review-form-center">
                        <div className="review-form-title">
                             <span>{this.props.car.year} {this.props.car.make} {this.props.car.model} Review</span>
+                       </div>
+
+                       <div className="review-form-errors">
+                         {this.renderErrors()}
                        </div>
 
                        <div className="review-form-rating">

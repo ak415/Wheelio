@@ -184,7 +184,7 @@ class CarShow extends React.Component {
                 </div>
 
 
-                {( review !== null) && (review.username === this.props.currentUser.username ) &&
+                {( review !== null) && (this.props.currentUser) && (review.username === this.props.currentUser.username ) && 
                   <div className="optional-buttons-flex">
                       <Link className="edit-review" to={`/cars/${this.props.car.id}/reviews/${review.id}/edit`} >Edit Review</Link>
                       <a className="delete-review" onClick={() => this.props.deleteReview(review.id)} >Delete Review</a>

@@ -6,7 +6,7 @@ class Api::ReviewsController < ApplicationController
     if @review.save
       render :show
     else
-      render json: @review.errors.full_messages, status: 400
+      render json: @review.errors.full_messages, status: 422
     end
   end
 
@@ -28,7 +28,7 @@ class Api::ReviewsController < ApplicationController
     if @review.update(review_params)
       render :show
     else
-      render json: @review.errors.full_messages
+      redner json: @review.errors.full_messages, status: 422
     end
   end
 

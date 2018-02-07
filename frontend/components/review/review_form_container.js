@@ -18,7 +18,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
       formType: "new",
       review,
-      errors: state.errors.session,
+      errors: state.errors.review,
       car: state.car[ownProps.match.params.carId],
       currentUser: state.session.currentUser,
     };
@@ -36,7 +36,7 @@ const mapStateToProps = (state, ownProps) => {
       review,
       car: state.car[ownProps.match.params.carId],
       currentUser: state.session.currentUser,
-      errors: state.errors.session,
+      errors: state.errors.review,
     };
   }
 };
