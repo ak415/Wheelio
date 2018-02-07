@@ -22,6 +22,7 @@ class ReviewForm extends React.Component {
  }
 
  updateAllState() {
+   this.props.clearError();
    this.setState({
      bodyValue: this.props.review.body,
      ratingValue: this.props.review.rating,
@@ -55,10 +56,21 @@ class ReviewForm extends React.Component {
     bodyValue: "",
     ratingValue: "",
   });
-}
+  this.props.clearError();
+  }
+
+
+  componentWillUnmount() {
+    this.props.clearError();
+  }
+
+  componentWillMount(){
+    this.props.clearError();
+  }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.formType !== nextProps.formType) {
+      this.props.clearError();
       this.clearState();
     }
   }
@@ -113,8 +125,10 @@ class ReviewForm extends React.Component {
 
 
   update(type){
+    this.props.clearError();
     return (e) =>(
       this.setState({[type]: e.target.value})
+
     );
   }
 

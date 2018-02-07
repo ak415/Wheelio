@@ -71,6 +71,11 @@ class CarShow extends React.Component {
       fontSize: '50px',
     };
 
+    let writeReviewLink = "";
+    if (this.props.currentUser) {
+      writeReviewLink = `/cars/${this.props.car.id}/reviews/new`;
+    } else  { writeReviewLink = `/signup`; }
+
 
     return(
       <div className="car-review-page">
@@ -159,6 +164,9 @@ class CarShow extends React.Component {
 
 
 
+
+
+
         <div>
             <h2 className="description-title"> Description</h2>
             <p className="car-description">{this.props.car.description}</p>
@@ -170,7 +178,7 @@ class CarShow extends React.Component {
 
           <div className="write-review-flex">
             <h2 className="description-title">Reviews</h2>
-            <Link className="submit-review" to={`/cars/${this.props.car.id}/reviews/new`} >Write a Review</Link>
+            <Link className="submit-review" to={writeReviewLink} >Write a Review</Link>
           </div>
 
 
@@ -184,7 +192,7 @@ class CarShow extends React.Component {
                 </div>
 
 
-                {( review !== null) && (this.props.currentUser) && (review.username === this.props.currentUser.username ) && 
+                {( review !== null) && (this.props.currentUser) && (review.username === this.props.currentUser.username ) &&
                   <div className="optional-buttons-flex">
                       <Link className="edit-review" to={`/cars/${this.props.car.id}/reviews/${review.id}/edit`} >Edit Review</Link>
                       <a className="delete-review" onClick={() => this.props.deleteReview(review.id)} >Delete Review</a>
