@@ -5,9 +5,8 @@ import { logout, clearError } from '../../actions/session_actions';
 import { fetchReviews} from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => {
-
   return {
-    cars: state.cars
+    cars: Object.values(state.cars)
     };
 };
 

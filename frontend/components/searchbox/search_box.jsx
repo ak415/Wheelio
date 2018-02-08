@@ -32,9 +32,9 @@ class SearchBox extends React.Component {
         <label>
           <input  className="search-input" placeholder="Your search starts here" stype="text" value={this.state.searchQuery} onChange={this.searchQueryChange} />
         </label>
-        
-        <div className="">
-          <input type="submit" value="Submit" />
+
+        <div className="submit-to-hide">
+          <input type="submit" value="Submit"></input>
         </div>
 
       </form>
