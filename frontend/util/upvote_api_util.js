@@ -1,15 +1,15 @@
-export const upvote = datum => {
+export const createUpvote = upvote => {
   return $.ajax({
     method: 'POST',
-    url: `api/upvotes`,
-    data: { datum }
+    url: `api/reviews/${upvote.review_id}/upvotes`,
+    data: { upvote }
   });
 };
 
 
-export const downvote = datumId => {
+export const deleteUpvote = upvoteId => {
   return $.ajax({
     method: 'DELETE',
-    url: `api/upvotes`,
+    url: `api/upvotes/${upvoteId}`,
   });
 };

@@ -43,7 +43,7 @@ class CarShow extends React.Component {
   }
 
   handleUpvotes(review) {
-
+    this.props.createUpvote( { user_id: this.props.currentUser.id , review_id: review.id  });
   }
 
 
@@ -223,7 +223,7 @@ class CarShow extends React.Component {
 
                 <div className="reaction-buttons">
                   <div>
-                    <a onClick={this.handleUpvotes} className="review-button" >Helpful ({review.upvotes.length})</a>
+                    <a onClick={() => {this.handleUpvotes(review);}} className="review-button" >Helpful ({review.upvotes.length})</a>
                   </div>
                   <div>
                     <a className="review-button" >Funny</a>

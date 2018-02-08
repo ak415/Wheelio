@@ -4,11 +4,12 @@ class Api::UpvotesController < ApplicationController
   def create
     @upvote = Upvote.new
     @upvote.user_id = current_user.id
-    @upvote.review_id = params[:id]
-    unless @upvote.save
-      flash[:errors] = @upvote.errors.full_messages
+    @upvote.review_id = params[:review_id]
+    if @upvote.save
+      render :show
+    else
+      render json: @upvote.errors.full_messages
     end
-    redirect_to review_url(params[:id])
   end
 
   def destroy

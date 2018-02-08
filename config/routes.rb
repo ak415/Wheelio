@@ -8,8 +8,10 @@ Rails.application.routes.draw do
       resources :cars, only: [:index, :show] do
         resources :reviews, only: [:create, :index, :update]
       end
-      resources :reviews, only: [:show, :destroy]
-      resources :upvotes, only: [:create, :destroy]
+      resources :reviews, only: [:show, :destroy] do
+        resources :upvotes, only: [:create]
+      end
+      resources :upvotes, only: [:destroy]
 
   end
 

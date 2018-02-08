@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchCar } from '../../actions/car_actions';
 import { deleteReview } from '../../actions/review_actions';
+import { createUpvote, deleteUpvote } from '../../actions/upvote_actions';
 import CarShow from './car_show';
 import {  withRouter } from 'react-router-dom';
 
@@ -20,7 +21,9 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     fetchCar: (carId) => dispatch(fetchCar(carId)),
-    deleteReview: (reviewId) => dispatch(deleteReview(reviewId))
+    deleteReview: (reviewId) => dispatch(deleteReview(reviewId)),
+    createUpvote: (upvote) => dispatch(createUpvote(upvote)),
+    deleteUpvote: (upvoteId) => dispatch(deleteUpvote(upvoteId))
   };
 };
 

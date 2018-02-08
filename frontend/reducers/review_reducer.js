@@ -4,6 +4,9 @@ import {
   REMOVE_REVIEW
 } from "../actions/review_actions";
 
+import {RECEIVE_UPVOTE} from "../actions/upvote_actions";
+
+
 import { RECEIVE_CAR } from '../actions/car_actions';
 import merge from "lodash/merge";
 
@@ -21,7 +24,10 @@ const ReviewReducer = (oldState = {}, action) => {
       return newState;
     case RECEIVE_CAR:
       return action.payload.reviews || {};
-
+    case RECEIVE_UPVOTE:
+    let newState2 = merge( {}, oldState);
+      newState2[action.upvote.review_id].upvotes.push(action.upvote);
+      return newState2;
     default:
       return oldState;
   }
