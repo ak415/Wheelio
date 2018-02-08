@@ -128,7 +128,7 @@ html {
   background: blue; */
   text-align: center;
   font-size: 25px;
-  color: black;
+  color: white;
   font-family: 700px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -185,7 +185,7 @@ html {
 
 .session-form {
   vertical-align: middle;
-  background: white;
+  background: black;
   text-align: center;
   padding: 35px 40px 5px 40px;
 }
@@ -203,15 +203,15 @@ html {
 .session-form  input[type="submit"]{
   padding: 4px 12px 4px 12px;
   font-size: 18px;
-  background: black;
+  background: white;
   margin: 40px;
-  color: white;
+  color: black;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .session-form  input[type="submit"]:hover {
   background: lightgrey;
-  color: black;
+  color: white;
   font-weight: 900px;
 }
 
@@ -234,7 +234,7 @@ html {
 
  .login-errors{
    width: 500px;
-   color: white;
+   color: #ff8080;
    text-align: left;
    margin-left: 20px;
    margin-bottom: 17px;
@@ -249,12 +249,14 @@ html {
 
  .login-inputs label {
    margin: 1.5px;
+   color: white;
    padding-right: 40px;
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
  }
 
  .login-inputs input {
    /* padding-right: 10px; */
+   color: black;
    padding:0 8px;
    border-bottom: 1px solid grey;
  }
@@ -270,9 +272,10 @@ html {
  }
 
  .alternative-option a {
-   color: black;
+   color: #ff3333;
    font-weight: 700;
    width: 55px;
+
  }
 
 .guest-greeting{
@@ -292,7 +295,7 @@ html {
 
  .greeting {
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-   color: #3C1518;
+   color: white;
    margin: 20px;
    font-size: 20px;
  }
@@ -830,7 +833,7 @@ html {
 
 .review-form-errors {
     width: 800px;
-    color: red;
+    color: white;
     text-align: left;
     margin-bottom: 80px;
     height: 50px;
@@ -847,7 +850,6 @@ html {
 .search-stuff input {
   background: white;
   font-size: 30;
-  margin-left: 30px;
 }
 
 
@@ -887,6 +889,10 @@ html {
   margin-top: 20px;
 }
 
+.homepage-car-wrapper {
+  margin: 50px;
+}
+
 .search-link-to-car {
   color: black;
   color: #0000ff;
@@ -906,4 +912,25 @@ html {
   justify-content: flex-end;
   padding-right: 3px;
   padding-bottom: 4px;
+}
+
+
+.wrap-homepage-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-cars {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.featured-cars p{
+  font-size: 34px;
+  font-weight: 700;
+  padding-left: 30px;
 }

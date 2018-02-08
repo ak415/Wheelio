@@ -25,6 +25,61 @@ class splashPage extends React.Component {
           className="search-input"
         />
       </div>
+
+      <div className="car-search-wrapper-padding">
+
+      <div className="featured-cars">
+        <p>Featured Cars</p>
+      </div>
+
+        <div className="wrap-homepage-items">
+
+          <div className="search-item-container">
+            <div className="homepage-car-wrapper">
+                  <div>
+                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg" className="car-images-search"/>
+                  </div>
+                  <h1 className="car-search-titles">
+                    2016 Toyota Camry
+                  </h1>
+                  <div className="learn-more-flex">
+                    <Link to={`/cars/1`} className="search-link-to-car"> Learn more </Link>
+                  </div>
+                </div>
+
+                <div className="homepage-car-wrapper">
+                      <div>
+                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg" className="car-images-search"/>
+                      </div>
+                      <h1 className="car-search-titles">
+                        2016 Toyota Corolla
+                      </h1>
+                      <div className="learn-more-flex">
+                        <Link to={`/cars/2`} className="search-link-to-car"> Learn more </Link>
+                      </div>
+                    </div>
+
+
+                    <div className="homepage-car-wrapper">
+                          <div>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg" className="car-images-search"/>
+                          </div>
+                          <h1 className="car-search-titles">
+                            2016 Honda Accord
+                          </h1>
+                          <div className="learn-more-flex">
+                            <Link to={`/cars/3`} className="search-link-to-car"> Learn more </Link>
+                          </div>
+                        </div>
+
+
+
+              </div>
+     </div>
+
+     </div>
+
+
     </div>
   );
   }

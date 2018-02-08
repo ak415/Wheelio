@@ -12,7 +12,7 @@ import {
   Link,
   HashRouter
 } from 'react-router-dom';
-import { AuthRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import splashPage from './home_page/splashpage';
 
 const App = () => (
@@ -29,8 +29,8 @@ const App = () => (
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Route exact path="/cars/:carId" component={CarShowContainer}/>
       <Route exact path="/cars/:carId/reviews" component={ReviewFormContainer}/>
-      <Route path="/cars/:carId/reviews/new" component={ReviewFormContainer}/>
-      <Route path="/cars/:carId/reviews/:reviewId/edit" component={ReviewFormContainer}/>
+      <ProtectedRoute path="/cars/:carId/reviews/new" component={ReviewFormContainer}/>
+      <ProtectedRoute path="/cars/:carId/reviews/:reviewId/edit" component={ReviewFormContainer}/>
       <Route exact path="/" component={splashPage} />
       <Route path="/search" component={SearchContainer} />
       <Redirect to="/"/>
