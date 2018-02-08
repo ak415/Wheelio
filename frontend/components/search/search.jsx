@@ -33,6 +33,7 @@ class Search extends React.Component {
     return (
       <div className="car-search-wrapper-padding">
 
+        <div className="wrap-search-items">
         {this.state.cars.map( car =>
 
           <div className="search-item-container">
@@ -43,12 +44,17 @@ class Search extends React.Component {
                   <h1 className="car-search-titles">
                     {car.year} {car.make} {car.model}
                   </h1>
-                  <div>
-                    <Link to={`/cars/${car.id}`} className="wheelio-homepage-link"> See More </Link>
+                  <div className="learn-more-flex">
+                    <Link to={`/cars/${car.id}`} className="search-link-to-car"> Learn more </Link>
                   </div>
-            </div>
+
+
           </div>
+
+
+      </div>
        )}
+     </div>
 
      </div>
 
