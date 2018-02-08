@@ -42,6 +42,11 @@ padding: 0;%;
   cursor: pointer;
 }
 
+.car-search-titles{
+  color: white;
+  font-size: 40px;
+}
+
 
 
 .wheelio-homepage-link {
@@ -819,4 +824,18 @@ html {
     text-align: left;
     margin-bottom: 80px;
     height: 50px;
+}
+
+
+.search-stuff {
+  color: red;
+  font-size: 30;
+}
+
+
+
+.search-stuff input {
+  background: white;
+  font-size: 30;
+  margin-left: 30px;
 }

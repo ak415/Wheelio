@@ -3,6 +3,8 @@ import GreetingContainer from './greeting/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
 import CarShowContainer from './car/car_show_container';
 import ReviewFormContainer from './review/review_form_container';
+import SearchContainer from './search/search_container';
+
 import {
   Route,
   Redirect,
@@ -28,8 +30,9 @@ const App = () => (
       <Route exact path="/cars/:carId" component={CarShowContainer}/>
       <Route exact path="/cars/:carId/reviews" component={ReviewFormContainer}/>
       <Route path="/cars/:carId/reviews/new" component={ReviewFormContainer}/>
-      <Route path="/cars/:carId/reviews/:reviewId/edit" component={ReviewFormContainer}/>        
+      <Route path="/cars/:carId/reviews/:reviewId/edit" component={ReviewFormContainer}/>
       <Route exact path="/" component={splashPage} />
+      <Route path="/search" component={SearchContainer} />
       <Redirect to="/"/>
     </Switch>
     <div className="footer">

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
+import SearchboxContainer from '../searchbox/searchbox_container';
 
 
 
@@ -19,8 +21,9 @@ class splashPage extends React.Component {
       </ul>
 
       <div className="homepage-search">
-
-        <input className="search-input" type="text" placeholder="Your search starts here"/>
+        <SearchboxContainer
+          className="search-input"
+        />
       </div>
     </div>
   );

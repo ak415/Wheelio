@@ -6,11 +6,11 @@ import CarShow from './car_show';
 import {  withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
-  let car = state.car[ownProps.match.params.carId];
+  let car = state.cars[ownProps.match.params.carId];
   return {
     car,
     currentUser: state.session.currentUser,
-    images: state.car.images,
+    images: state.cars.images,
     carImageIndex: 0,
     reviews: Object.values(state.reviews)
   };
