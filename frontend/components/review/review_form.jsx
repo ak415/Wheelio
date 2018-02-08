@@ -170,9 +170,12 @@ class ReviewForm extends React.Component {
                           </label>
                       </div>
 
-
                       <div className="review-submit-button">
                         <input type="submit" value="Submit" />
+                      </div>
+
+                      <div className="review-submit-button">
+                          <Link to={`/cars/${this.props.car.id}`} > Back </Link>
                       </div>
 
                 </div>
