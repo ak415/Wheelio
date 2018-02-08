@@ -832,7 +832,7 @@ html {
 
 .review-form-errors {
     width: 800px;
-    color: white;
+    color: red;
     text-align: left;
     margin-bottom: 80px;
     height: 50px;
@@ -867,6 +867,13 @@ html {
   font-size: 30px;
 }
 
+.car-homepage-titles{
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+
 .submit-to-hide {
   display: none;
 }
@@ -881,6 +888,11 @@ html {
 }
 .car-images-search {
   height: 200px;
+  width: auto;
+}
+
+.car-images-homepage {
+  height: 202px;
   width: auto;
 }
 

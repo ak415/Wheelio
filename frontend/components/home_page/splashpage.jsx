@@ -37,9 +37,9 @@ class splashPage extends React.Component {
           <div className="search-item-container">
             <div className="homepage-car-wrapper">
                   <div>
-                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg" className="car-images-search"/>
+                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg" className="car-images-homepage"/>
                   </div>
-                  <h1 className="car-search-titles">
+                  <h1 className="car-homepage-titles">
                     2016 Toyota Camry
                   </h1>
                   <div className="learn-more-flex">
@@ -49,9 +49,9 @@ class splashPage extends React.Component {
 
                 <div className="homepage-car-wrapper">
                       <div>
-                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg" className="car-images-search"/>
+                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg" className="car-images-homepage"/>
                       </div>
-                      <h1 className="car-search-titles">
+                      <h1 className="car-homepage-titles">
                         2016 Toyota Corolla
                       </h1>
                       <div className="learn-more-flex">
@@ -62,9 +62,9 @@ class splashPage extends React.Component {
 
                     <div className="homepage-car-wrapper">
                           <div>
-                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg" className="car-images-search"/>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg" className="car-images-homepage"/>
                           </div>
-                          <h1 className="car-search-titles">
+                          <h1 className="car-homepage-titles">
                             2016 Honda Accord
                           </h1>
                           <div className="learn-more-flex">
