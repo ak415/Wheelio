@@ -189,3 +189,49 @@ Image.create(
   car_id: 3,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_05_bl4jjk.jpg"
 )
+
+
+Upvote.create(
+  review_id: 3,
+  user_id: 2
+)
+
+Upvote.create(
+  review_id: 3,
+  user_id: 4
+)
+
+Upvote.create(
+  review_id: 3,
+  user_id: 3
+)
+
+Upvote.create(
+  review_id: 4,
+  user_id: 2
+)
+
+Upvote.create(
+  review_id: 4,
+  user_id: 4
+)
+
+Upvote.create(
+  review_id: 4,
+  user_id: 3
+)
+
+Upvote.create(
+  review_id: 5,
+  user_id: 2
+)
+
+Upvote.create(
+  review_id: 5,
+  user_id: 4
+)
+
+Upvote.create(
+  review_id: 5,
+  user_id: 3
+)

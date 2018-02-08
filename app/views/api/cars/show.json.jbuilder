@@ -11,7 +11,7 @@
   json.reviews do
     @car.reviews.each do |review|
         json.set! review.id do
-          json.extract! review, :id, :user_id, :body, :user_rating, :created_at, :updated_at
+          json.extract! review, :id, :user_id, :body, :user_rating, :created_at, :updated_at, :upvotes
           json.username review.user.username
         end
     end

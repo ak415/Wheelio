@@ -9,17 +9,33 @@ class Search extends React.Component {
     this.state = ({
       cars: this.props.cars
     });
+    this.clearState = this.clearState.bind(this);
   }
 
   componentDidMount() {
     const cars = this.props.cars;
     console.log( "THE STATE IS", this.state);
     console.log( "THE PROPS ARE", this.props);
+
   }
 
 
+
   componentWillReceiveProps(nextProps) {
-    console.log(this.nextProps);
+    console.log("search is receiving props",nextProps);
+    this.clearState();
+    this.props = nextProps;
+  }
+
+  clearState() {
+  this.setState({
+    cars: []
+  });
+  }
+
+  componentWillUnmount() {
+    console.log("Component unmounted");
+    this.clearState();
   }
 
 
@@ -28,6 +44,7 @@ class Search extends React.Component {
       return null;
     }
     if (this.state.cars.length < 1 ) {
+      this.clearState();
       this.props.history.push("/");
     }
     return (

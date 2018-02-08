@@ -14,7 +14,6 @@ class Api::UpvotesController < ApplicationController
   def destroy
     @upvote = Upvote.find(params[:id])
     @upvote.destroy
-    redirect_to review_url(@upvote.review_id)
   end
 
 end

@@ -14,6 +14,10 @@ class SearchBox extends React.Component {
   componentDidMount() {
   }
 
+  componentWillMount() {
+    console.log("search-box UNMOUNTING");
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     this.props.findCars(this.state.searchQuery)

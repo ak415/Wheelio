@@ -36,6 +36,8 @@ const App = () => (
       <Redirect to="/"/>
     </Switch>
     <div className="footer">
+      <div className="footer-container">
+      </div>
     </div>
   </div>
 );

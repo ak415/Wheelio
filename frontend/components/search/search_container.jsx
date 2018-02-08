@@ -6,7 +6,7 @@ import { fetchReviews} from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    cars: Object.values(state.cars)
+    cars: Object.values(state.search)
     };
 };
 

@@ -10,6 +10,7 @@ class CarShow extends React.Component {
     this.handleImageChangeNext = this.handleImageChangeNext.bind(this);
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
     this.findAverageRating = this.findAverageRating.bind(this);
+    this.handleUpvotes = this.handleUpvotes.bind(this);
   }
 
   componentDidMount() {
@@ -41,6 +42,11 @@ class CarShow extends React.Component {
     });
   }
 
+  handleUpvotes(review) {
+
+  }
+
+
 
   findAverageRating() {
     if (this.props.car === undefined) {
@@ -61,6 +67,12 @@ class CarShow extends React.Component {
     if (this.props.car.price){
       price += this.props.car.price.toLocaleString(navigator.language, { minimumFractionDigits: 0 });
     }
+    // for (var i = 0; i < this.props.reviews.length; i++) {
+    //   if (!(this.props.reviews[i].upvotes instanceof(Array))) {
+    //     return null;
+    //   }
+    // }
+
 
     let iconStyle = {
       fontSize: '70px',
@@ -211,7 +223,7 @@ class CarShow extends React.Component {
 
                 <div className="reaction-buttons">
                   <div>
-                    <a className="review-button" >Helpful</a>
+                    <a onClick={this.handleUpvotes} className="review-button" >Helpful ({review.upvotes.length})</a>
                   </div>
                   <div>
                     <a className="review-button" >Funny</a>
