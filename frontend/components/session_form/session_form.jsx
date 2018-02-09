@@ -71,7 +71,7 @@ class SessionForm extends React.Component {
 
     let greeting = "";
     if (this.props.formType === 'login') {
-      greeting = "Login to your account";
+      greeting = "   Please sign in.";
     } else {
       greeting = "Create a new account";
     }
@@ -79,30 +79,55 @@ class SessionForm extends React.Component {
     return (
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form">
-          <h3 className="form-welcome-message">Welcome to Wheelio!</h3>
-          <div className="greeting">
-            { greeting }
+
+          <div className="greeting-wrapper">
+            <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517710944/wheelio_second_logo_di3ikl.svg" className="wheelio-logo-white-forms"/>
+
+            <p>
+              Welcome.
+            </p>
+
+            <div className="greeting">
+              { greeting }
+            </div>
+
           </div>
+
+
           <div className="login-errors">
             {this.renderErrors()}
           </div>
           <div className="login-inputs">
-            <label>Username:
+            <label>
+              <div className="login-icons">
+                <i class="fas fa-user-circle"></i>
+              </div>
               <input type="text"
+                placeholder="username"
                 value={this.state.username}
                 onChange={this.update('username')}
+                className="login-username-input"
               />
             </label>
             {  (this.props.formType === 'signup') &&
-              <label>Email:
+              <label>
+                <div className="login-icons">
+                  <i class="fas fa-envelope-square" ></i>
+                </div>
                 <input type="text"
+                  placeholder="email"
                   value={this.state.email}
                   onChange={this.update('email')}
+                    className="login-email-input"
                   />
               </label>
             }
-            <label>Password:
+            <label>
+              <div className="login-icons">
+                 <i class="fas fa-key"></i>
+              </div>
               <input type="password"
+                placeholder="password"
                 value={this.state.password}
                 onChange={this.update('password')}
               />

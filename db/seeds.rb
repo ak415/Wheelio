@@ -117,77 +117,77 @@ Review.create(
 
 Image.create(
   car_id: 1,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_01_kxwtai.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-01_i0mehj.jpg"
 )
 
 Image.create(
   car_id: 1,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-02_juw3kd.jpg"
 )
 
 Image.create(
   car_id: 1,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_04_sp4u9r.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-03_i41vzj.jpg"
 )
 
 Image.create(
   car_id: 1,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_03_nat2jc.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-04_fy8vzm.jpg"
 )
 
 Image.create(
   car_id: 1,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_02_kws82v.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-05_rgnxxb.jpg"
 )
 
 Image.create(
   car_id: 2,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-01_lkxrql.jpg"
 )
 
 Image.create(
   car_id: 2,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_02_thkvv6.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-02_b1lui2.jpg"
 )
 
 Image.create(
   car_id: 2,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_03_vv6abf.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-03_r5gmca.jpg"
 )
 
 Image.create(
   car_id: 2,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_04_ns5g6e.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-04_yqbsbe.jpg"
 )
 
 Image.create(
   car_id: 2,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_05_udgeyx.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-05_hduh7g.jpg"
 )
 
 Image.create(
   car_id: 3,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-03_makpcj.jpg"
 )
 
 Image.create(
   car_id: 3,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_02_d3u1zs.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-05_z3imrd.jpg"
 )
 
 Image.create(
   car_id: 3,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_03_kv0rgo.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-04_utf8pw.jpg"
 )
 
 Image.create(
   car_id: 3,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_04_yp84mx.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-02_puqexp.jpg"
 )
 
 Image.create(
   car_id: 3,
-  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_05_bl4jjk.jpg"
+  image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-01_li72dq.jpg"
 )
 
 

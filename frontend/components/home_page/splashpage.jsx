@@ -39,13 +39,12 @@ class splashPage extends React.Component {
             <div className="homepage-car-wrapper">
                 <Link to={"/cars/1"}>
                   <div>
-                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg" className="car-images-homepage"/>
+                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-02_juw3kd.jpg" className="car-images-homepage"/>
                   </div>
                   <h1 className="car-homepage-titles">
                     2016 Toyota Camry
                   </h1>
                   <div className="learn-more-flex">
-                    <Link to={`/cars/1`} className="search-link-to-car"> Learn more </Link>
                   </div>
                 </Link>
                 </div>
@@ -55,13 +54,12 @@ class splashPage extends React.Component {
                   <Link to={"/cars/2"}>
 
                       <div>
-                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg" className="car-images-homepage"/>
+                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-01_lkxrql.jpg" className="car-images-homepage"/>
                       </div>
                       <h1 className="car-homepage-titles">
                         2016 Toyota Corolla
                       </h1>
                       <div className="learn-more-flex">
-                        <Link to={`/cars/2`} className="search-link-to-car"> Learn more </Link>
                       </div>
                       </Link>
                     </div>
@@ -70,13 +68,12 @@ class splashPage extends React.Component {
                     <div className="homepage-car-wrapper">
                       <Link to={"/cars/3"}>
                           <div>
-                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg" className="car-images-homepage"/>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-01_li72dq.jpg" className="car-images-homepage"/>
                           </div>
                           <h1 className="car-homepage-titles">
                             2016 Honda Accord
                           </h1>
                           <div className="learn-more-flex">
-                            <Link to={`/cars/3`} className="search-link-to-car"> Learn more </Link>
                           </div>
                         </Link>
                         </div>

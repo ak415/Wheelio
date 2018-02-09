@@ -172,8 +172,8 @@ html {
 }
 
 .session-form-container{
-  width: 450px;
-  margin: 50px auto;
+  width: 400px;
+  margin: 200px auto;
 }
 .splash-page {
   height: 100%;
@@ -184,32 +184,59 @@ html {
 
 .session-form {
   vertical-align: middle;
-  background: black;
+  background: #1F1F1F;
   text-align: center;
-  padding: 35px 40px 5px 40px;
+  padding: 35px 10px 5px 10px;
 }
 
-.session-form input[type="text"], input[type="password"]{
-  width: 63%;
+.login-email-input {
+  width: 72%;
   height: 30px;
   font-size: 14px;
-  background: white;
+  background: #0D0D0D;
   text-align: left;
   margin: 2px;
+  box-shadow: 0 0 1px #000
+}
+
+.login-username-input {
+  width: 72%;
+  height: 30px;
+  font-size: 14px;
+  background: red;
+  text-align: left;
+  margin: 2px;
+  box-shadow: 0 0 1px #000
+
+}
+
+
+
+.session-form input[type="password"]{
+  width: 72%;
+  height: 30px;
+  font-size: 14px;
+  background: #0C0C0C  ;
+  text-align: left;
+  margin: 2px;
+  box-shadow: 0 0 1px #000
 
 }
 
 .session-form  input[type="submit"]{
-  padding: 4px 12px 4px 12px;
+  padding: 4px 0px 4px 0px;
   font-size: 18px;
   background: white;
-  margin: 40px;
-  color: black;
+  margin: 30px 0px 20px 0;
+  background: #262626;
+  width: 316.01px;
+  color: #b3b3b3;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  box-shadow: 0 0 4px #000
 }
 
 .session-form  input[type="submit"]:hover {
-  background: lightgrey;
+  background: #202020;
   color: white;
   font-weight: 900px;
 }
@@ -232,12 +259,14 @@ html {
  }
 
  .login-errors{
-   width: 500px;
+   width: 100%;
    color: #ff8080;
    text-align: left;
+   font-size: 14.px;
    margin-left: 20px;
    margin-bottom: 17px;
    height: 50px;
+   padding-left: 34px;
  }
 
  .login-inputs {
@@ -249,24 +278,41 @@ html {
  .login-inputs label {
    margin: 1.5px;
    color: white;
-   padding-right: 40px;
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .login-inputs input {
    /* padding-right: 10px; */
-   color: black;
-   padding:0 8px;
+   background: #0D0D0D;
+   padding:2px 2px 2px 45px;
    border-bottom: 1px solid grey;
  }
 
+.login-icons {
+  font-size: 20px;
+  margin-right: -34px;
+  margin-bottom:2px;
+  color: #1E1E1E;
+  background: #121212;
+  width: 30px;
+  z-index:100;
+  height: 32px;
+  align-items: center;
+  text-align: center;
+  border-top:1px solid #0D0D0D;
+  border-right: 1px solid #0D0D0D;
+  border-left: 1px solid #0D0D0D;
+}
 
  .alternative-option {
    font-size: 14px;
    color: grey;
    padding-top: 20px;
    text-align: right;
-   margin-right: -25px;
+   margin-right: 0px;
    margin-bottom: 2px;
  }
 
@@ -295,8 +341,9 @@ html {
  .greeting {
    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
    color: white;
-   margin: 20px;
    font-size: 20px;
+   width: 250px;
+   text-align: center;
  }
 
  .description-title {
@@ -334,7 +381,7 @@ html {
  .car-images-and-stats-flex {
    display: flex;
    flex-direction: row;
-   margin: -140px 0 120px 0;
+   margin: -140px 0 50px 0;
    width: 100%;
  }
 
@@ -344,7 +391,7 @@ html {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-end;
+   justify-content: center;
    margin: 40px 10px 10px -50px;
    width: 100%;
  }
@@ -462,12 +509,12 @@ html {
 
   .average-car-score-string {
    font-size: 30px;
-   margin: 70px 0px 0px 10px;
+   margin: 20px 0px 0px 10px;
    color: #4d4d4d;
   }
 
  .actual-car-score {
-   margin: -10px 0px 60px 40px;
+   margin: -10px 0px 20px 40px;
    font-size: 40px;
    font-weight: 900px;
  }
@@ -513,7 +560,7 @@ html {
 
 .car-images {
   display: flex;
-  height: 450px;
+  width: 450px;
   width:auto;
   margin: 20px;
   flex: 1;
@@ -532,7 +579,7 @@ html {
 }
 
 #gallerywrapper #gallery div {
-    width:640px; height:900px;
+    width:640px; height:auto;
     padding:30px 30px 0 0;
     position:relative;
 }
@@ -540,6 +587,7 @@ html {
 #gallerywrapper #gallery div img {
     clear:both;
     display:block;
+    width: 600px;
     margin: 20px 20px 20px 0px auto;
     border:0;
 }
@@ -567,14 +615,14 @@ html {
 
 #gallery .previous{
   float:left;
-  margin: -270px 0px 50px 18px;
+  margin: -250px 0px 50px 18px;
 
   display:none;
   text-decoration:none;
   z-index: 1;
   position:relative;
   color:#b3b3b3;
-  transform: scale(1.5,3);
+  transform: scale(1.4,2.4);
   opacity: 0.3;
   background: black;
 
@@ -589,12 +637,12 @@ html {
 #gallery .next{
     display:none;
     float:right;
-    margin: -270px 38px 0px 0px;
+    margin: -240px 38px 0px 0px;
     text-decoration:none;
     z-index: 1;
     position:relative;
     color:#b3b3b3;
-    transform: scale(1.5,3);
+    transform: scale(1.4,2.4);
     opacity: 0.3;
     background: black;
 }
@@ -906,6 +954,9 @@ html {
 }
 
 .search-result-car-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .homepage-car-wrapper {
@@ -976,4 +1027,27 @@ html {
 
 .footer-container1:hover  {
 color: #CDAD00;
+}
+
+.greeting-wrapper {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+  font-family: "Verdana", Geneva, sans-serif;
+  width: 65%;
+  margin-left: 17%
+
+}
+
+
+.greeting-wrapper  p {
+  color: #D5D5D5;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.wheelio-logo-white-forms {
+  width: auto;
+  height: 80px;
+  margin: 0 0 23px 0px;
 }
