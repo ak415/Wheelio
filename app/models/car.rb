@@ -27,8 +27,11 @@ class Car < ApplicationRecord
           results << result
         end
       end
+      if results == []
+        results = Car.all
+      end 
 
-      results
+      return results
       # Car.where("(cars.make) ilike ?", "%#{query}%")
       # .or(Car.where("(cars.model) ilike ?" , "%#{query}%"))
         # .or(Car.where("CAST((cars.year) AS CHAR) = ?" , "%#{query}%"))
