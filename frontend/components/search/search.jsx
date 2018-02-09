@@ -54,7 +54,7 @@ class Search extends React.Component {
         {this.state.cars.map( car =>
 
           <div className="search-item-container">
-            <div className="search-result-car-wrapper">
+            <Link to={`/cars/${car.id}`}  className="search-result-car-wrapper">
                   <div>
                       <img src={car.images[0].image_url} className="car-images-search"/>
                   </div>
@@ -66,7 +66,7 @@ class Search extends React.Component {
                   </div>
 
 
-          </div>
+          </Link>
 
 
       </div>

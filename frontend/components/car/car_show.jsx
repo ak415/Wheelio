@@ -74,7 +74,7 @@ class CarShow extends React.Component {
   }
 
   render() {
-    if (this.props.car === undefined || this.props.car.images === undefined || this.state.carImageIndex === undefined || this.props.reviews  === undefined || this.props.currentUser  === undefined) {
+    if (this.props.car === undefined || this.props.car.images   === undefined || this.state.carImageIndex === undefined || this.props.reviews  === undefined || this.props.currentUser  === undefined) {
       return null;
     }
     let price= "$";
@@ -238,12 +238,6 @@ class CarShow extends React.Component {
                 <div className="reaction-buttons">
                   <div>
                     <a onClick={() => {this.handleUpvotes(review);}} className="review-button" >Helpful ({review.upvotes.length})</a>
-                  </div>
-                  <div>
-                    <a className="review-button" >Funny</a>
-                  </div>
-                  <div>
-                    <a className="review-button" >Cool</a>
                   </div>
                 </div>
 

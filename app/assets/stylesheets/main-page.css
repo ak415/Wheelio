@@ -688,6 +688,7 @@ html {
   width: 90px;
   font-weight: bold;
   font-size: 14px;
+  user-select: none;
 
 }
 
@@ -709,6 +710,7 @@ html {
 
 .description-reviews-wrap {
   width: 100%;
+
 }
 
 .post-review-page {
@@ -904,7 +906,6 @@ html {
 }
 
 .search-result-car-wrapper {
-  margin-top: 20px;
 }
 
 .homepage-car-wrapper {
