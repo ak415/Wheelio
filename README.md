@@ -4,7 +4,7 @@
 Wheelio is a single page app inspired by Yelp and Edmunds.com and created using a React/Redux frontend and Ruby on Rails backend. 
 It makes it easy for users to read reviews about cars from current and previous owners. Getting a non-biased perspective about the vehicles allows better due diligence for those looking into purchasing a specific vehicle. 
 
-![Wheelio Home Page][]
+![][https://github.com/aazaiez/Wheelio/blob/master/Docs/Homepage.png?raw=true]
 
 ## Features
 
@@ -12,8 +12,7 @@ It makes it easy for users to read reviews about cars from current and previous 
 
 Secure frontend to backend user authentication using BCrypt
 
-![Wheelio Home Page][]
-
+![][https://github.com/aazaiez/Wheelio/blob/master/Docs/Sign_up.png?raw=true]
 
 
 ### Review Creation
@@ -42,14 +41,14 @@ The car's show page displays the following information about the car:
 * Description
 
 
-![Car show page][]
+![][https://github.com/aazaiez/Wheelio/blob/master/Docs/car_show.png?raw=true]
 
 
 ### Search
 
 A search was implemented allowing responding to the query string with an ajax call that fetches the cars from the database.
 
-![search][]
+![][https://github.com/aazaiez/Wheelio/blob/master/Docs/search_page.png?raw=true]
 
 ## Future Directions
 
