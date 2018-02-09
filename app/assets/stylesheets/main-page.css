@@ -19,6 +19,7 @@
 
 body , html {
   height: 100%;
+  font-family: Georgia, serif;
 }
 
 .welcome-login-signup {
@@ -104,7 +105,7 @@ html {
   border-radius: 25px;
   box-sizing: border-box;
   margin: 50px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Georgia, serif;
   text-align: center;
 }
 
@@ -128,8 +129,8 @@ html {
   text-align: center;
   font-size: 25px;
   color: white;
-  font-family: 700px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: 700;
+  font-family: Georgia, serif;
 }
 
 .flex-box-welcome-message{
@@ -149,7 +150,7 @@ html {
   align-items: center;
   font-size: 18px;
   margin: 100px auto 0 auto;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Georgia, serif;
   color: #fff3e6;
   vertical-align: middle;
   width: 540px;
@@ -231,7 +232,7 @@ html {
   background: #262626;
   width: 316.01px;
   color: #b3b3b3;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Georgia, serif;
   box-shadow: 0 0 4px #000
 }
 
@@ -247,7 +248,7 @@ html {
   align-items: center;
   align-content: center;
   text-align: center;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Georgia, serif;
   margin: 10px;
 }
 
@@ -278,7 +279,7 @@ html {
  .login-inputs label {
    margin: 1.5px;
    color: white;
-   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   font-family: Georgia, serif;
    display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +296,7 @@ html {
   font-size: 20px;
   margin-right: -34px;
   margin-bottom:2px;
-  color: #1E1E1E;
+  color: #313131;
   background: #121212;
   width: 30px;
   z-index:100;
@@ -339,7 +340,7 @@ html {
 
 
  .greeting {
-   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   font-family: Georgia, serif;
    color: white;
    font-size: 20px;
    width: 250px;
@@ -362,7 +363,7 @@ html {
 
 
  .car-review-page {
-   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   font-family: Georgia, serif;
    background: white;
    width: 100%;
    margin: 150px 0 0 0;
@@ -554,7 +555,7 @@ html {
     margin: 50px 10px 50px 0px;
     position:relative;
     flex: 1;
-    font-family:verdana, arial, sans-serif;
+    font-family: Georgia, serif;
 }
 
 
@@ -762,7 +763,7 @@ html {
 }
 
 .post-review-page {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Georgia, serif;
   background: white;
   width: 100%;
   height: 100%;
@@ -1033,7 +1034,7 @@ color: #CDAD00;
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
-  font-family: "Verdana", Geneva, sans-serif;
+  font-family: Georgia, serif;
   width: 65%;
   margin-left: 17%
 
