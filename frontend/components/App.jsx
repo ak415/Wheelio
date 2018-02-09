@@ -15,6 +15,7 @@ import {
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import splashPage from './home_page/splashpage';
 
+
 const App = () => (
   <div className="main-page">
     <div className="nav-bar">
@@ -36,7 +37,16 @@ const App = () => (
       <Redirect to="/"/>
     </Switch>
     <div className="footer">
-      <div className="footer-container">
+      <div className="footer-container1">
+        <a href="https://www.linkedin.com/in/akramazaiez/">
+          <i class="fab fa-linkedin" style={{fontSize: '25px'}}></i>
+        </a>
+      </div>
+
+      <div className="footer-container1">
+        <a href="https://github.com/aazaiez/Wheelio">
+          <i class="fab fa-github-square" style={{fontSize: '25px'}}></i>
+        </a>
       </div>
     </div>
   </div>

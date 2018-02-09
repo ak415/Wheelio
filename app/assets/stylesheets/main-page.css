@@ -954,8 +954,26 @@ html {
   padding-left: 30px;
 }
 
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right:0;
+  height: 30px;
+  width: 5%;
+  background: url("http://res.cloudinary.com/aazaiez/image/upload/v1517609657/home_page_image_fxsxij.png") no-repeat center center fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
-.footer-container {
-  background: black;
-  width: 100%;
+.footer-container1 {
+  font-size: 30;
+  color: white;
+  padding: 3px 0 0 3px;
+}
+
+.footer-container1:hover  {
+color: #CDAD00;
 }
