@@ -203,7 +203,7 @@ html {
   background: #1F1F1F;
   text-align: center;
   padding: 35px 10px 5px 10px;
-  box-shadow: inset 0px 0px 20px #0c0c0c;
+  box-shadow: inset 0px 0px 10px #b3b3b3;
 }
 
 .login-email-input {
@@ -1026,7 +1026,7 @@ html {
   text-align: center;
   position: fixed;
   bottom: 0;
-  right:0;
+  right:50%;
   height: 30px;
   width: 5%;
   background: url("http://res.cloudinary.com/aazaiez/image/upload/v1517609657/home_page_image_fxsxij.png") no-repeat center center fixed;
