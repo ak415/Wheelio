@@ -34,15 +34,15 @@ class splashPage extends React.Component {
 
         <div className="wrap-homepage-items">
 
-          <div className="search-item-container">
+          <div className="homepage-item-container">
 
             <div className="homepage-car-wrapper">
-                <Link to={"/cars/1"}>
+                <Link to={"/cars7"}>
                   <div>
-                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-02_juw3kd.jpg" className="car-images-homepage"/>
+                      <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-101_lhdjqp.jpg" className="car-images-homepage"/>
                   </div>
                   <h1 className="car-homepage-titles">
-                    2016 Toyota Camry
+                    2018 Audi S5
                   </h1>
                   <div className="learn-more-flex">
                   </div>
@@ -51,13 +51,13 @@ class splashPage extends React.Component {
 
 
                 <div className="homepage-car-wrapper">
-                  <Link to={"/cars/2"}>
+                  <Link to={"/cars/13"}>
 
                       <div>
-                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-01_lkxrql.jpg" className="car-images-homepage"/>
+                          <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-105_czxkue.jpg" className="car-images-homepage"/>
                       </div>
                       <h1 className="car-homepage-titles">
-                        2016 Toyota Corolla
+                        2017 Cadillac Escalade
                       </h1>
                       <div className="learn-more-flex">
                       </div>
@@ -66,12 +66,51 @@ class splashPage extends React.Component {
 
 
                     <div className="homepage-car-wrapper">
-                      <Link to={"/cars/3"}>
+                      <Link to={"/cars/10"}>
                           <div>
-                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-01_li72dq.jpg" className="car-images-homepage"/>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-101_kiamez.jpg" className="car-images-homepage"/>
                           </div>
                           <h1 className="car-homepage-titles">
-                            2016 Honda Accord
+                            2017 Lexus RX350
+                          </h1>
+                          <div className="learn-more-flex">
+                          </div>
+                        </Link>
+                        </div>
+
+                    <div className="homepage-car-wrapper">
+                      <Link to={"/cars/14"}>
+                          <div>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-1_mntlfd.jpg" className="car-images-homepage"/>
+                          </div>
+                          <h1 className="car-homepage-titles">
+                            2017 BMW X5
+                          </h1>
+                          <div className="learn-more-flex">
+                          </div>
+                        </Link>
+                        </div>
+
+                    <div className="homepage-car-wrapper">
+                      <Link to={"/cars/16"}>
+                          <div>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-108_klx8q9.jpg" className="car-images-homepage"/>
+                          </div>
+                          <h1 className="car-homepage-titles">
+                            2018 Ford Mustang GT
+                          </h1>
+                          <div className="learn-more-flex">
+                          </div>
+                        </Link>
+                        </div>
+
+                    <div className="homepage-car-wrapper">
+                      <Link to={"/cars/17"}>
+                          <div>
+                              <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-126_yi6jcx.jpg" className="car-images-homepage"/>
+                          </div>
+                          <h1 className="car-homepage-titles">
+                            2018 Volkswagen GTI
                           </h1>
                           <div className="learn-more-flex">
                           </div>

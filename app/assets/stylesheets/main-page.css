@@ -938,7 +938,7 @@ html {
 
 .car-search-titles{
   color: black;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .car-homepage-titles{
@@ -1067,4 +1067,15 @@ color: #CDAD00;
   width: auto;
   height: 80px;
   margin: 0 0 23px 0px;
+}
+
+
+.homepage-item-container {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  border-bottom:1px solid #b3b3b3;
+  margin: 20px;
+  padding-top: 20px;
+  flex-wrap: wrap;
 }

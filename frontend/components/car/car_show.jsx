@@ -70,7 +70,8 @@ class CarShow extends React.Component {
     for (var i = 0; i < this.props.reviews.length; i++) {
       result += this.props.reviews[i].user_rating;
     }
-    return Number((result/this.props.reviews.length).toFixed(1));
+
+    return ((result/this.props.reviews.length).toFixed(1)) === NaN ? ((result/this.props.reviews.length).toFixed(1)) : 0 ;
   }
 
   render() {
