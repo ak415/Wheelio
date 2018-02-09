@@ -77,6 +77,10 @@ class SessionForm extends React.Component {
     }
 
     return (
+
+      <div className="form-wrapper" >
+
+
       <div className="session-form-container">
         <form onSubmit={this.handleSubmit} className="session-form">
 
@@ -141,6 +145,7 @@ class SessionForm extends React.Component {
           </div>
         </form>
       </div>
+    </div>
     );
   }
 }
