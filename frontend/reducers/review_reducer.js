@@ -4,7 +4,7 @@ import {
   REMOVE_REVIEW
 } from "../actions/review_actions";
 
-import {RECEIVE_UPVOTE} from "../actions/upvote_actions";
+import {RECEIVE_UPVOTE, REMOVE_UPVOTE } from "../actions/upvote_actions";
 
 
 import { RECEIVE_CAR } from '../actions/car_actions';
@@ -25,9 +25,21 @@ const ReviewReducer = (oldState = {}, action) => {
     case RECEIVE_CAR:
       return action.payload.reviews || {};
     case RECEIVE_UPVOTE:
-    let newState2 = merge( {}, oldState);
+      let newState2 = merge( {}, oldState);
       newState2[action.upvote.review_id].upvotes.push(action.upvote);
       return newState2;
+    case REMOVE_UPVOTE:
+      console.warn("WARNING!");
+      let newState3 = merge( {}, oldState);
+      let repArray = [];
+      for (var i = 0; i < newState3[action.upvote.review_id].upvotes.length; i++) {
+        if (newState3[action.upvote.review_id].upvotes[i].id == action.upvote.id) {
+          continue;
+        }
+        repArray.push(newState3[action.upvote.review_id].upvotes[i]);
+      }
+      newState3[action.upvote.review_id].upvotes = repArray;
+      return newState3;
     default:
       return oldState;
   }

@@ -35,7 +35,9 @@ class splashPage extends React.Component {
         <div className="wrap-homepage-items">
 
           <div className="search-item-container">
+
             <div className="homepage-car-wrapper">
+                <Link to={"/cars/1"}>
                   <div>
                       <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625361/camry_05_dw6mya.jpg" className="car-images-homepage"/>
                   </div>
@@ -45,9 +47,13 @@ class splashPage extends React.Component {
                   <div className="learn-more-flex">
                     <Link to={`/cars/1`} className="search-link-to-car"> Learn more </Link>
                   </div>
+                </Link>
                 </div>
 
+
                 <div className="homepage-car-wrapper">
+                  <Link to={"/cars/2"}>
+
                       <div>
                           <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625341/corolla_01_uzshwe.jpg" className="car-images-homepage"/>
                       </div>
@@ -57,10 +63,12 @@ class splashPage extends React.Component {
                       <div className="learn-more-flex">
                         <Link to={`/cars/2`} className="search-link-to-car"> Learn more </Link>
                       </div>
+                      </Link>
                     </div>
 
 
                     <div className="homepage-car-wrapper">
+                      <Link to={"/cars/3"}>
                           <div>
                               <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517625307/accord_01_vtt3cq.jpg" className="car-images-homepage"/>
                           </div>
@@ -70,6 +78,7 @@ class splashPage extends React.Component {
                           <div className="learn-more-flex">
                             <Link to={`/cars/3`} className="search-link-to-car"> Learn more </Link>
                           </div>
+                        </Link>
                         </div>
 
 

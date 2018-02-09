@@ -15,6 +15,10 @@ class Review < ApplicationRecord
     foreign_key: :review_id,
     class_name: :Upvote
 
+  has_many :upvoters,
+    through: :upvotes,
+    source: :user
+
   def review_too_short
       if (body.length < 20) && (body.length > 0)
         errors[:body] << "review too short, please add more information"

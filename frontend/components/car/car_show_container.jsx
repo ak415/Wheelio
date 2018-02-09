@@ -13,7 +13,8 @@ const mapStateToProps = (state, ownProps) => {
     currentUser: state.session.currentUser,
     images: state.cars.images,
     carImageIndex: 0,
-    reviews: Object.values(state.reviews)
+    reviews: Object.values(state.reviews),
+    upvotes: state.upvotes
   };
 };
 

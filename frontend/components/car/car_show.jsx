@@ -43,7 +43,21 @@ class CarShow extends React.Component {
   }
 
   handleUpvotes(review) {
-    this.props.createUpvote( { user_id: this.props.currentUser.id , review_id: review.id  });
+
+    let outcome = "up";
+    let upvoteId = 0;
+    for (var i = 0; i < review.upvotes.length; i++) {
+       if (review.upvotes[i].user_id === this.props.currentUser.id) {
+         upvoteId = review.upvotes[i].id;
+         outcome = 'down';
+       }
+    }
+
+    if (outcome === "up") {
+      this.props.createUpvote( { user_id: this.props.currentUser.id , review_id: review.id  });
+    } else {
+      this.props.deleteUpvote(upvoteId);
+    }
   }
 
 

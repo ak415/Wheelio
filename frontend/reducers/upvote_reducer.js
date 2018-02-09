@@ -12,6 +12,7 @@ const UpvoteReducer = (oldState = {} , action) => {
       return action.upvote;
     case REMOVE_UPVOTE:
       let newState = merge({}, oldState);
+      debugger;
       delete newState[action.upvoteId];
       return newState;
     default:

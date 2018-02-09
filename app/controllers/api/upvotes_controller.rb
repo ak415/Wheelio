@@ -15,6 +15,8 @@ class Api::UpvotesController < ApplicationController
   def destroy
     @upvote = Upvote.find(params[:id])
     @upvote.destroy
+    render :show
+
   end
 
 end

@@ -10,9 +10,9 @@ const receiveUpvote = upvote => ({
   upvote
 });
 
-const removeUpvote = upvoteId => ({
+const removeUpvote = upvote => ({
   type: REMOVE_UPVOTE,
-  upvoteId
+  upvote
 });
 
 
@@ -23,5 +23,5 @@ export const createUpvote = (upvote) => dispatch => {
 
 export const deleteUpvote = (upvoteId) => dispatch => {
   return UpvoteAPIUtil.deleteUpvote(upvoteId)
-    .then(() => removeUpvote(upvoteId));
+    .then((upvote) => dispatch(removeUpvote(upvote)));
 };
