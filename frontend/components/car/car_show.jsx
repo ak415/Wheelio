@@ -6,7 +6,7 @@ class CarShow extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {carImageIndex: 0};
     this.handleImageChangeNext = this.handleImageChangeNext.bind(this);
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
     this.findAverageRating = this.findAverageRating.bind(this);
@@ -22,6 +22,7 @@ class CarShow extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.props.location.pathname !== nextProps.location.pathname || this.props.reviews.length !== nextProps.reviews.length) {
+      this.setState({carImageIndex: 0 });
       this.props.fetchCar(nextProps.match.params.carId);
     }
     this.setState(nextProps);

@@ -280,7 +280,7 @@ html {
    color: #ff8080;
    text-align: left;
    font-size: 14px;
-   margin-left: 20px;
+   margin-left: 10px;
    margin-bottom: 17px;
    height: 50px;
    padding-left: 34px;
@@ -1026,7 +1026,7 @@ html {
   text-align: center;
   position: fixed;
   bottom: 0;
-  right:50%;
+  right: 0;
   height: 30px;
   width: 5%;
   background: url("http://res.cloudinary.com/aazaiez/image/upload/v1517609657/home_page_image_fxsxij.png") no-repeat center center fixed;
@@ -1052,7 +1052,8 @@ color: #CDAD00;
  justify-content: flex-start;
   font-family: Georgia, serif;
   width: 65%;
-  margin-left: 17%
+  margin-left: 17%;
+  margin-bottom: 10px;
 
 }
 

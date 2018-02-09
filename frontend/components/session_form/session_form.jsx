@@ -73,7 +73,7 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'login') {
       greeting = "   Please sign in.";
     } else {
-      greeting = "Create a new account";
+      greeting = "Create a new account.";
     }
 
     return (
