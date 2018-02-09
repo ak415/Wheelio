@@ -1,4 +1,5 @@
-# [Wheelio live](https://wheelio.herokuapp.com/#/)
+# 
+[Wheelio live](https://wheelio.herokuapp.com/#/)
 
 Wheelio is a single page app inspired by Yelp and Edmunds.com and created using a React/Redux frontend and Ruby on Rails backend. 
 It makes it easy for users to read reviews about cars from current and previous owners. Getting a non-biased perspective about the vehicles allows better due diligence for those looking into purchasing a specific vehicle. 
@@ -7,12 +8,22 @@ It makes it easy for users to read reviews about cars from current and previous 
 
 ## Features
 
+### Login/Sign up Page
+
+Secure frontend to backend user authentication using BCrypt
+
+![Wheelio Home Page][]
+
+
+
 ### Review Creation
 
 Without signing up, visotors can search for cars and read reviews from other users. Once signed up, users can post and upvote reviews.
 After creating a review and posting it, user can edit it or delete it.
 
 In order to submit a review, users are required to provide a rating that impacts the car's average rating. Once a review is submitted, they are redirected to the car's page where they can see their post.  
+
+
 
 
 ### Review update
