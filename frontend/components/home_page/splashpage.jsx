@@ -37,7 +37,7 @@ class splashPage extends React.Component {
           <div className="homepage-item-container">
 
             <div className="homepage-car-wrapper">
-                <Link to={"/cars7"}>
+                <Link to={"/cars/7"}>
                   <div>
                       <img src="http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-101_lhdjqp.jpg" className="car-images-homepage"/>
                   </div>
