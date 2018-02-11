@@ -15,7 +15,6 @@ class SearchBox extends React.Component {
   }
 
   componentWillMount() {
-    console.log("search-box UNMOUNTING");
   }
 
   handleSubmit(event) {

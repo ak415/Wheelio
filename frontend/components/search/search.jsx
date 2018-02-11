@@ -14,15 +14,11 @@ class Search extends React.Component {
 
   componentDidMount() {
     const cars = this.props.cars;
-    console.log( "THE STATE IS", this.state);
-    console.log( "THE PROPS ARE", this.props);
-
   }
 
 
 
   componentWillReceiveProps(nextProps) {
-    console.log("search is receiving props",nextProps);
     this.clearState();
     this.props = nextProps;
   }
@@ -34,7 +30,6 @@ class Search extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("Component unmounted");
     this.clearState();
   }
 
