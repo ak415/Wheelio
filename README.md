@@ -32,7 +32,7 @@ Upon mounting, the review form autofills with the review information. Users can 
 
 ### Review upvote/downvote
 
-Signed in users can upvote and downvote submitted reviews. I found myself challenged while handling the downvote feature and making sure
+Signed in users can upvote and downvote submitted reviews.
 
 ### Car show
 
