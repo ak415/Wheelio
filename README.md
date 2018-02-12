@@ -29,6 +29,11 @@ In order to submit a review, users are required to provide a rating that impacts
 
 Upon mounting, the review form autofills with the review information. Users can only update and delete their own reviews.
 
+
+### Review upvote/downvote
+
+Signed in users can upvote and downvote submitted reviews. I found myself challenged while handling the downvote feature and making sure
+
 ### Car show
 
 The car's show page displays the following information about the car:
@@ -48,7 +53,7 @@ The car's show page displays the following information about the car:
 
 A search was implemented allowing responding to the query string with an ajax call that fetches the cars from the database.
 
-One of the biggest hurdles encountered while implementing the search was being able to take the full user input into consideration when the car's year, make, and model are entered into the search box. This was handled within the car's model on the backend by splitting the user's full query string into substrings an running them separately against the database prior to joining results and display the matching cars. 
+One of the biggest hurdles encountered while implementing the search was being able to take the full user input into consideration when the car's year, make, and model are entered into the search box. This was handled within the car's model on the backend by splitting the user's full query string into substrings an running them separately against the database prior to joining results and display the matching cars.
 
 ```ruby
 def self.search(query)
@@ -68,8 +73,6 @@ def self.search(query)
   return results
 end
 ```
-
-
 
 ![](https://github.com/aazaiez/Wheelio/blob/master/Docs/search_page.png?raw=true)
 

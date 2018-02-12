@@ -29,7 +29,6 @@ const ReviewReducer = (oldState = {}, action) => {
       newState2[action.upvote.review_id].upvotes.push(action.upvote);
       return newState2;
     case REMOVE_UPVOTE:
-      console.warn("WARNING!");
       let newState3 = merge( {}, oldState);
       let repArray = [];
       for (var i = 0; i < newState3[action.upvote.review_id].upvotes.length; i++) {
