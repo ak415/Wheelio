@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
 
 class CarShow extends React.Component {
@@ -11,6 +11,7 @@ class CarShow extends React.Component {
     this.handleImageChangePrevious = this.handleImageChangePrevious.bind(this);
     this.findAverageRating = this.findAverageRating.bind(this);
     this.handleUpvotes = this.handleUpvotes.bind(this);
+    this.handleWritingReview = this.handleWritingReview.bind(this);
   }
 
   componentDidMount() {
@@ -48,17 +49,33 @@ class CarShow extends React.Component {
     let outcome = "up";
     let upvoteId = 0;
     for (var i = 0; i < review.upvotes.length; i++) {
-       if (review.upvotes[i].user_id === this.props.currentUser.id) {
+       if (review.upvotes[i].user_id === this.props.currentUser.id && this.props.currentUser.username !== "guest" ) {
          upvoteId = review.upvotes[i].id;
          outcome = 'down';
        }
     }
 
-    if (outcome === "up") {
+    if (outcome === "up" && this.props.currentUser.username !== "guest" ) {
       this.props.createUpvote( { user_id: this.props.currentUser.id , review_id: review.id  });
     } else {
       this.props.deleteUpvote(upvoteId);
     }
+  }
+
+  handleWritingReview(e) {
+    e.preventDefault();
+    let writeReviewLink = "";
+
+    if (this.props.currentUser) {
+      
+      writeReviewLink = `/cars/${this.props.car.id}/reviews/new`;
+    } else { writeReviewLink = `/signup`; }
+
+    if (this.props.currentUser && this.props.currentUser.username === "guest") {
+      this.props.logout();
+      this.props.history.push(writeReviewLink);
+    }
+    this.props.history.push(writeReviewLink);
   }
 
 
@@ -71,9 +88,8 @@ class CarShow extends React.Component {
     for (var i = 0; i < this.props.reviews.length; i++) {
       result += this.props.reviews[i].user_rating;
     }
-    debugger;
 
-    return (isNaN((result/this.props.reviews.length).toFixed(1)))? 0:  ((result/this.props.reviews.length).toFixed(1)) ;
+    return (isNaN((result/this.props.reviews.length).toFixed(1)))? `—` :  ((result/this.props.reviews.length).toFixed(1)).concat("/10")  ;
   }
 
   render() {
@@ -100,10 +116,7 @@ class CarShow extends React.Component {
       fontSize: '50px',
     };
 
-    let writeReviewLink = "";
-    if (this.props.currentUser) {
-      writeReviewLink = `/cars/${this.props.car.id}/reviews/new`;
-    } else  { writeReviewLink = `/signup`; }
+
 
 
     return(
@@ -139,7 +152,7 @@ class CarShow extends React.Component {
 
                      <div className="next-to-wheelio-logo">
                        <span className="average-car-score-string"> WHEELIO Score</span>
-                       <span className="actual-car-score"> {this.findAverageRating()}/10</span>
+                       <span className="actual-car-score"> &nbsp;{this.findAverageRating()}</span>
                     </div>
             </div>
 
@@ -207,7 +220,7 @@ class CarShow extends React.Component {
 
           <div className="write-review-flex">
             <h2 className="description-title">Reviews</h2>
-            <Link className="submit-review" to={writeReviewLink} >Write a Review</Link>
+            <a className="submit-review" onClick={this.handleWritingReview}>Write a Review</a>
           </div>
 
 

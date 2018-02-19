@@ -521,6 +521,7 @@ html {
  .next-to-wheelio-logo {
    display: flex;
    flex-direction: column;
+   align-items: center;
  }
 
 
@@ -531,7 +532,7 @@ html {
   }
 
  .actual-car-score {
-   margin: -10px 0px 20px 40px;
+    margin: 0px 0px 20px 10px;
    font-size: 40px;
    font-weight: 900px;
  }
@@ -859,6 +860,12 @@ html {
 .review-submit-button input {
   width: 100%;
 }
+.review-submit-button a {
+  width: 100%;
+  display: inline-block;
+}
+
+
 
 
 
