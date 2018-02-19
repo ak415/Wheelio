@@ -104,7 +104,7 @@ class SessionForm extends React.Component {
           <div className="login-inputs">
             <label>
               <div className="login-icons">
-                <i class="fas fa-user-circle"></i>
+                <i className="fas fa-user-circle"></i>
               </div>
               <input type="text"
                 placeholder="username"
@@ -116,7 +116,7 @@ class SessionForm extends React.Component {
             {  (this.props.formType === 'signup') &&
               <label>
                 <div className="login-icons">
-                  <i class="fas fa-envelope-square" ></i>
+                  <i className="fas fa-envelope-square" ></i>
                 </div>
                 <input type="text"
                   placeholder="email"
@@ -128,7 +128,7 @@ class SessionForm extends React.Component {
             }
             <label>
               <div className="login-icons">
-                 <i class="fas fa-key"></i>
+                 <i className="fas fa-key"></i>
               </div>
               <input type="password"
                 placeholder="password"

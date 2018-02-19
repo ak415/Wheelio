@@ -39,13 +39,13 @@ const App = () => (
     <div className="footer">
       <div className="footer-container1">
         <a href="https://www.linkedin.com/in/akramazaiez/">
-          <i class="fab fa-linkedin" style={{fontSize: '25px'}}></i>
+          <i className="fab fa-linkedin" style={{fontSize: '25px'}}></i>
         </a>
       </div>
 
       <div className="footer-container1">
         <a href="https://github.com/aazaiez/Wheelio">
-          <i class="fab fa-github-square" style={{fontSize: '25px'}}></i>
+          <i className="fab fa-github-square" style={{fontSize: '25px'}}></i>
         </a>
       </div>
     </div>
