@@ -66,15 +66,15 @@ class CarShow extends React.Component {
     e.preventDefault();
     let writeReviewLink = "";
 
+    // if (this.props.currentUser && this.props.currentUser.username !== "guest") {
     if (this.props.currentUser) {
-      
       writeReviewLink = `/cars/${this.props.car.id}/reviews/new`;
     } else { writeReviewLink = `/signup`; }
 
-    if (this.props.currentUser && this.props.currentUser.username === "guest") {
-      this.props.logout();
-      this.props.history.push(writeReviewLink);
-    }
+    // if (this.props.currentUser && this.props.currentUser.username === "guest") {
+    //   this.props.history.push(writeReviewLink);
+    //   // this.props.logout();
+    // }
     this.props.history.push(writeReviewLink);
   }
 
