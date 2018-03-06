@@ -24,7 +24,6 @@ const App = () => (
         <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517710944/wheelio_second_logo_di3ikl.svg" className="wheelio-logo-white"/>
         <div>WLO</div>
       </Link>
-      <Route exact path="/login" component={SearchboxContainer}/>
       <Route exact path="/cars/:carId" component={SearchboxContainer}/>
       <Route exact path="/search" component={SearchboxContainer} />
       <GreetingContainer />
