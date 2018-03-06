@@ -4,6 +4,7 @@ import SessionFormContainer from './session_form/session_form_container';
 import CarShowContainer from './car/car_show_container';
 import ReviewFormContainer from './review/review_form_container';
 import SearchContainer from './search/search_container';
+import SearchboxContainer from './searchbox/searchbox_container';
 
 import {
   Route,
@@ -23,6 +24,9 @@ const App = () => (
         <img src="http://res.cloudinary.com/aazaiez/image/upload/v1517710944/wheelio_second_logo_di3ikl.svg" className="wheelio-logo-white"/>
         <div>WLO</div>
       </Link>
+      <Route exact path="/login" component={SearchboxContainer}/>
+      <Route exact path="/cars/:carId" component={SearchboxContainer}/>
+      <Route exact path="/search" component={SearchboxContainer} />
       <GreetingContainer />
     </div>
     <Switch>

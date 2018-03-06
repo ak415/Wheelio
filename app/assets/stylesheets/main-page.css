@@ -1,6 +1,6 @@
 
 .main-page {
-  height: 100%;
+  height: fit-content;
   margin: 0;
 }
 
@@ -15,6 +15,7 @@
   background: url("http://res.cloudinary.com/aazaiez/image/upload/v1517609657/home_page_image_fxsxij.png") no-repeat center center fixed;
   color: white;
    background-size: cover;
+   align-items: center
 }
 
 body , html {

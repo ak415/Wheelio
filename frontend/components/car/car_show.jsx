@@ -134,7 +134,7 @@ class CarShow extends React.Component {
         <div id="gallerywrapper">
           <div id="gallery">
             <div id="pic1">
-              <img src={this.props.car.images[this.state.carImageIndex].image_url} className="car-images"/>
+              <img src={this.props.car.images[this.state.carImageIndex].image_url} id="car-image" className="car-images"/>
               <a onClick={this.handleImageChangeNext}  className="next" ><i className="fas fa-chevron-right" style={iconStyleNext}></i></a>
               <a onClick={this.handleImageChangePrevious}  className="previous" ><i className="fas fa-chevron-left" style={iconStyleNext}></i></a>
             </div>

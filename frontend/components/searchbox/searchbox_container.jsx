@@ -6,6 +6,7 @@ import { fetchCars, findCars } from '../../actions/car_actions';
 const mapStateToProps = (state, ownProps) => {
   return {
     result: state.search,
+    inputContent: "" 
   };
 };
 
