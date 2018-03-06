@@ -12,10 +12,19 @@ class CarShow extends React.Component {
     this.findAverageRating = this.findAverageRating.bind(this);
     this.handleUpvotes = this.handleUpvotes.bind(this);
     this.handleWritingReview = this.handleWritingReview.bind(this);
+    this.handleNoReviews = this.handleNoReviews.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchCar(this.props.match.params.carId);
+  }
+
+  handleNoReviews() {
+    if (this.props.reviews !== undefined) {
+      return "";
+    } else {
+      return "Write the first review";
+    }
   }
 
 
@@ -223,7 +232,7 @@ class CarShow extends React.Component {
             <a className="submit-review" onClick={this.handleWritingReview}>Write a Review</a>
           </div>
 
-
+          <div> {this.handleNoReviews()}</div>
           {this.props.reviews.map(review =>
 
           <div className="review-content-flex">

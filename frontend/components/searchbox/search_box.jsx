@@ -10,7 +10,7 @@ class SearchBox extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.searchQueryChange = this.searchQueryChange.bind(this);
     this.handleInputContent = this.handleInputContent.bind(this);
-    this.handleAutoFocus = this.handleAutoFocus.bind(this)
+    this.handleAutoFocus = this.handleAutoFocus.bind(this);
   }
 
   componentDidMount() {
@@ -27,14 +27,6 @@ class SearchBox extends React.Component {
 
   searchQueryChange(event) {
   this.setState({ searchQuery: event.target.value });
-  }
-
-  handleInputContent() {
-    if (this.props.location.pathname === "/") {
-      return "Your search starts here";
-    } else {
-      return "e.g. Audi A5";
-    }
   }
 
   handleInputContent() {
