@@ -1,6 +1,6 @@
 
 .main-page {
-  height: fit-content;
+  height: 100%;
   margin: 0;
 }
 
@@ -178,7 +178,6 @@ html {
 .session-form-container{
   width: 400px;
   margin: 20px auto;
-  background: yellow;
 }
 .splash-page {
   height: 100%;
@@ -193,7 +192,6 @@ html {
   height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   z-index: -1;
   background-repeat: no-repeat;
