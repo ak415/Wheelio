@@ -38,7 +38,6 @@ body , html {
 .welcome-login-signup-effects:hover {
   border-bottom:1px solid #fff;
   cursor: pointer;
-  transition: all 400ms;
 }
 
 
