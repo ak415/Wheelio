@@ -38,6 +38,7 @@ body , html {
 .welcome-login-signup-effects:hover {
   border-bottom:1px solid #fff;
   cursor: pointer;
+  transition: all 400ms;
 }
 
 
@@ -50,6 +51,7 @@ body , html {
   background: white;
   color: black;
   cursor: pointer;
+  transition: all 400ms;
 }
 
 
@@ -261,6 +263,7 @@ html {
   background: #202020;
   color: white;
   font-weight: 900px;
+  transition: all 400ms;
 }
 
 
@@ -705,6 +708,7 @@ html {
   cursor: pointer;
   background: grey;
   color: black;
+  transition: all 400ms;
 }
 
 .review-content-flex {
@@ -767,6 +771,7 @@ html {
   background: white;
   cursor: pointer;
   color: black;
+  transition: all 400ms;
 }
 
 
@@ -857,9 +862,9 @@ html {
 }
 
 .review-submit-button:hover {
-  background: #0d0d0d;
-  color: white;
-  font-weight: 900;
+  background: #333333;
+  color: #e6e6e6;
+  transition: all 400ms;
 }
 
 .review-submit-button input {
@@ -890,6 +895,7 @@ html {
   cursor: pointer;
   background: grey;
   color: white;
+  transition: all 400ms;
 }
 
 .delete-review {
@@ -908,6 +914,7 @@ html {
   cursor: pointer;
   background: grey;
   color: white;
+  transition: all 400ms;
 }
 
 .optional-buttons-flex {
