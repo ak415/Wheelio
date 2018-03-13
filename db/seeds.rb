@@ -19,7 +19,7 @@ User.create( username: 'Antoine', email: "qantoine@gmail.com", password: "guest1
 User.create( username: 'guest', email: "guest", password: "guest123")
 
 
-Car.create!(
+car_1 = Car.create!(
   year: 2016,
   make: "Toyota",
   model: "Camry",
@@ -35,7 +35,7 @@ Car.create!(
   price: 34000
 )
 
-Car.create!(
+car_2 = Car.create!(
   year: 2016,
   make: "Toyota",
   model: "Corolla",
@@ -50,7 +50,7 @@ Car.create!(
   price: 19000
 )
 
-Car.create!(
+car_3 = Car.create!(
   year: 2016,
   make: "Honda",
   model: "Accord",
@@ -67,7 +67,7 @@ Car.create!(
 )
 
 
-Car.create!(
+car_4 = Car.create!(
   year: 2017,
   make: "BMW",
   model: "5-series",
@@ -82,7 +82,7 @@ Car.create!(
 
 
 # ID 5
-Car.create!(
+car_5 = Car.create!(
   year: 2017,
   make: "BMW",
   model: "3-series",
@@ -98,7 +98,7 @@ Car.create!(
 
 # id6
 
-Car.create!(
+car_6 = Car.create!(
   year: 2017,
   make: "Tesla",
   model: "Model S",
@@ -115,7 +115,7 @@ Car.create!(
 
 
 # ID7
-Car.create!(
+car_6 = Car.create!(
   year: 2018,
   make: "Audi",
   model: "S5",
@@ -136,7 +136,7 @@ Car.create!(
 
 
 # ID8
-Car.create!(
+car_8 = Car.create!(
   year: 2018,
   make: "Audi",
   model: "Q5",
@@ -156,7 +156,7 @@ Car.create!(
 
 # ID9
 
-Car.create!(
+car_9 = Car.create!(
   year: 2018,
   make: "Mercedes-Benz",
   model: "C-class",
@@ -173,7 +173,7 @@ Car.create!(
 
 # ID10
 
-Car.create!(
+car_10 = Car.create!(
   year: 2017,
   make: "Lexus",
   model: "RX 350",
@@ -191,7 +191,7 @@ Car.create!(
 # ID11
 
 
-Car.create!(
+car_11 = Car.create!(
   year: 2018,
   make: "Toyota",
   model: "Prius",
@@ -207,7 +207,7 @@ Car.create!(
 
 # ID12
 
-Car.create!(
+car_12 = Car.create!(
   year: 2017,
   make: "Jeep",
   model: "Grand Cherokee",
@@ -223,7 +223,7 @@ Car.create!(
 
 # ID13
 
-Car.create!(
+car_13 = Car.create!(
   year: 2017,
   make: "Cadillac",
   model: "Escalade",
@@ -238,7 +238,7 @@ Car.create!(
 
 
 # ID14
-Car.create!(
+car_14 = Car.create!(
   year: 2017,
   make: "BMW",
   model: "X5",
@@ -253,7 +253,7 @@ Car.create!(
 
 
 # ID15
-Car.create!(
+car_15 = Car.create!(
   year: 2018,
   make: "Land Rover",
   model: "Range Rover",
@@ -269,7 +269,7 @@ Car.create!(
 
 # ID16
 
-Car.create!(
+car_16 = Car.create!(
   year: 2018,
   make: "Ford",
   model: "Mustang GT",
@@ -283,7 +283,7 @@ Car.create!(
 )
 
 
-Car.create!(
+car_17 = Car.create!(
   year: 2018,
   make: "Volkswagen",
   model: "Golf GTI",
@@ -298,7 +298,7 @@ Car.create!(
 
 
 # ID18
-Car.create!(
+car_18 = Car.create!(
   year: 2016,
   make: "Nissan",
   model: "Altima",
@@ -313,7 +313,7 @@ Car.create!(
 
 # ID19
 
-Car.create!(
+car_19 = Car.create!(
   year: 2018,
   make: "Volvo",
   model: "XC60",
@@ -328,7 +328,7 @@ Car.create!(
 
 
 
-Car.create!(
+car_20 = Car.create!(
   year: 2018,
   make: "Ford",
   model: "Raptor",
@@ -423,104 +423,104 @@ Review.create(
 )
 
 Image.create(
-  car_id: 1,
+  car_id: car_1.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-01_i0mehj.jpg"
 )
 
 Image.create(
-  car_id: 1,
+  car_id: car_1.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-02_juw3kd.jpg"
 )
 
 Image.create(
-  car_id: 1,
+  car_id: car_1.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-03_i41vzj.jpg"
 )
 
 Image.create(
-  car_id: 1,
+  car_id: car_1.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-04_fy8vzm.jpg"
 )
 
 Image.create(
-  car_id: 1,
+  car_id: car_1.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149773/2016-Toyota-Camry-05_rgnxxb.jpg"
 )
 
 Image.create(
-  car_id: 2,
+  car_id: car_2.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-01_lkxrql.jpg"
 )
 
 Image.create(
-  car_id: 2,
+  car_id: car_2.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-02_b1lui2.jpg"
 )
 
 Image.create(
-  car_id: 2,
+  car_id: car_2.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-03_r5gmca.jpg"
 )
 
 Image.create(
-  car_id: 2,
+  car_id: car_2.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-04_yqbsbe.jpg"
 )
 
 Image.create(
-  car_id: 2,
+  car_id: car_2.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518145859/2016-Toyota-Corolla-05_hduh7g.jpg"
 )
 
 Image.create(
-  car_id: 3,
+  car_id: car_3.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-03_makpcj.jpg"
 )
 
 Image.create(
-  car_id: 3,
+  car_id: car_3.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-05_z3imrd.jpg"
 )
 
 Image.create(
-  car_id: 3,
+  car_id: car_3.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-04_utf8pw.jpg"
 )
 
 Image.create(
-  car_id: 3,
+  car_id: car_3.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-02_puqexp.jpg"
 )
 
 Image.create(
-  car_id: 3,
+  car_id: car_3.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518149489/2016-Honda-Accord-01_li72dq.jpg"
 )
 
 
 
 Image.create(
-  car_id: 4,
+  car_id: car_4.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518202146/2017-BMW-540i-1_uacguq.jpg"
 )
 
 Image.create(
-  car_id: 4,
+  car_id: car_4.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518202146/2017-BMW-540i-3_soeke3.jpg"
 )
 
 Image.create(
-  car_id: 4,
+  car_id: car_4.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518202146/2017-BMW-540i-4_n46qvr.jpg"
 )
 
 Image.create(
-  car_id: 4,
+  car_id: car_4.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518202146/2017-BMW-540i-5_kdshbb.jpg"
 )
 
 Image.create(
-  car_id: 4,
+  car_id: car_4.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518202146/2017-BMW-540i-2_ea8jvd.jpg"
 )
 
@@ -528,27 +528,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 5,
+  car_id: car_5.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518203222/2017-BMW-330i-5_ukwdcg.jpg"
 )
 
 Image.create(
-  car_id: 5,
+  car_id: car_5.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518203222/2017-BMW-330i-4_cjmonf.jpg"
 )
 
 Image.create(
-  car_id: 5,
+  car_id: car_5.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518203222/2017-BMW-330i-3_h8000r.jpg"
 )
 
 Image.create(
-  car_id: 5,
+  car_id: car_5.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518203222/2017-BMW-330i-2_d0hiyt.jpg"
 )
 
 Image.create(
-  car_id: 5,
+  car_id: car_5.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518203222/2017-BMW-330i-1_fi3pee.jpg"
 )
 
@@ -556,27 +556,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 6,
+  car_id: car_6.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204245/2017-Tesla-Model-S-P90D-5_wtwmfg.jpg"
 )
 
 Image.create(
-  car_id: 6,
+  car_id: car_6.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204245/2017-Tesla-Model-S-P90D-4_hpuk4y.jpg"
 )
 
 Image.create(
-  car_id: 6,
+  car_id: car_6.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204245/2017-Tesla-Model-S-P90D-3_yckzhl.jpg"
 )
 
 Image.create(
-  car_id: 6,
+  car_id: car_6.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204245/2017-Tesla-Model-S-P90D-2_vglf0p.jpg"
 )
 
 Image.create(
-  car_id: 6,
+  car_id: car_6.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204245/2017-Tesla-Model-S-P90D-1_ohy5fo.jpg"
 )
 
@@ -587,27 +587,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 7,
+  car_id: car_7.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-101_lhdjqp.jpg"
 )
 
 Image.create(
-  car_id: 7,
+  car_id: car_7.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-102_c85hj3.jpg"
 )
 
 Image.create(
-  car_id: 7,
+  car_id: car_7.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-120_qalal6.jpg"
 )
 
 Image.create(
-  car_id: 7,
+  car_id: car_7.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-103_ohut1h.jpg"
 )
 
 Image.create(
-  car_id: 7,
+  car_id: car_7.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518204865/2018-Audi-S5-Prestige-122_lbx1fa.jpg"
 )
 
@@ -618,27 +618,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 8,
+  car_id: car_8.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205287/2018-audi-q5-1_ojxdtm.jpg"
 )
 
 Image.create(
-  car_id: 8,
+  car_id: car_8.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205287/2018-audi-q5-2_aesai8.jpg"
 )
 
 Image.create(
-  car_id: 8,
+  car_id: car_8.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205287/2018-audi-q5-3_oj87fx.jpg"
 )
 
 Image.create(
-  car_id: 8,
+  car_id: car_8.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205287/2018-audi-q5-4_z7hc0u.jpg"
 )
 
 Image.create(
-  car_id: 8,
+  car_id: car_8.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205287/2018-audi-q5-5_dhqcra.jpg"
 )
 
@@ -651,27 +651,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 9,
+  car_id: car_9.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205954/2016-Mercedes-Benz-1_uitppo.jpg"
 )
 
 Image.create(
-  car_id: 9,
+  car_id: car_9.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205954/2016-Mercedes-Benz-2_ctxe4h.jpg"
 )
 
 Image.create(
-  car_id: 9,
+  car_id: car_9.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205953/2016-Mercedes-Benz-3_gce0bt.jpg"
 )
 
 Image.create(
-  car_id: 9,
+  car_id: car_9.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205953/2016-Mercedes-Benz-4_cup2nr.jpg"
 )
 
 Image.create(
-  car_id: 9,
+  car_id: car_9.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518205954/2016-Mercedes-Benz-5_wduqrh.jpg"
 )
 
@@ -687,27 +687,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 10,
+  car_id: car_10.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-101_kiamez.jpg"
 )
 
 Image.create(
-  car_id: 10,
+  car_id: car_10.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-106_ontkv9.jpg"
 )
 
 Image.create(
-  car_id: 10,
+  car_id: car_10.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-109_t2gte3.jpg"
 )
 
 Image.create(
-  car_id: 10,
+  car_id: car_10.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-141_i1vjm1.jpg"
 )
 
 Image.create(
-  car_id: 10,
+  car_id: car_10.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518206249/2017-Lexus-RX350-F-Sport-143_ovdhrh.jpg"
 )
 
@@ -724,27 +724,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 11,
+  car_id: car_11.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518207888/2017-Toyota-Prius_1_s3uj3c.jpg"
 )
 
 Image.create(
-  car_id: 11,
+  car_id: car_11.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518207888/2017-Toyota-Prius_2_lkxfej.jpg"
 )
 
 Image.create(
-  car_id: 11,
+  car_id: car_11.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518207888/2017-Toyota-Prius_3_rqhnlp.jpg"
 )
 
 Image.create(
-  car_id: 11,
+  car_id: car_11.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518207888/2017-Toyota-Prius_4_dpr9ui.jpg"
 )
 
 Image.create(
-  car_id: 11,
+  car_id: car_11.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518207888/2017-Toyota-Prius_5_nh24qd.jpg"
 )
 
@@ -763,27 +763,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 12,
+  car_id: car_12.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208525/2017-Jeep-Grand-Cherokee-Trailhawk-1_pswj3z.jpg"
 )
 
 Image.create(
-  car_id: 12,
+  car_id: car_12.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208525/2017-Jeep-Grand-Cherokee-Trailhawk-2_exv2kh.jpg"
 )
 
 Image.create(
-  car_id: 12,
+  car_id: car_12.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208525/2017-Jeep-Grand-Cherokee-Trailhawk-3_odn9ew.jpg"
 )
 
 Image.create(
-  car_id: 12,
+  car_id: car_12.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208525/2017-Jeep-Grand-Cherokee-Trailhawk-4_dpqruk.jpg"
 )
 
 Image.create(
-  car_id: 12,
+  car_id: car_12.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208525/2017-Jeep-Grand-Cherokee-Trailhawk-5_wwsbc4.jpg"
 )
 
@@ -800,27 +800,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 13,
+  car_id: car_13.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-105_czxkue.jpg"
 )
 
 Image.create(
-  car_id: 13,
+  car_id: car_13.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-104_tmxbzt.jpg"
 )
 
 Image.create(
-  car_id: 13,
+  car_id: car_13.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-108_htywql.jpg"
 )
 
 Image.create(
-  car_id: 13,
+  car_id: car_13.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-121_wa6pr9.jpg"
 )
 
 Image.create(
-  car_id: 13,
+  car_id: car_13.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518208966/2017-Cadillac-Escalade-127_zbrqju.jpg"
 )
 
@@ -837,27 +837,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 14,
+  car_id: car_14.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-1_mntlfd.jpg"
 )
 
 Image.create(
-  car_id: 14,
+  car_id: car_14.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-2_bjp5pb.jpg"
 )
 
 Image.create(
-  car_id: 14,
+  car_id: car_14.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-3_oifcbg.jpg"
 )
 
 Image.create(
-  car_id: 14,
+  car_id: car_14.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-4_jbdy9p.jpg"
 )
 
 Image.create(
-  car_id: 14,
+  car_id: car_14.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209336/2016-BMW-X5-xDrive40e-5_qjerxu.jpg"
 )
 
@@ -875,27 +875,27 @@ Image.create(
 
 
 Image.create(
-  car_id:15,
+  car_id:car_15.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209734/2018-Range-Rover-Euro-spec-1_yjtvsg.jpg"
 )
 
 Image.create(
-  car_id:15,
+  car_id:car_15.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209734/2018-Range-Rover-Euro-spec-2_vlzupq.jpg"
 )
 
 Image.create(
-  car_id:15,
+  car_id:car_15.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209734/2018-Range-Rover-Euro-spec-3_imtgj0.jpg"
 )
 
 Image.create(
-  car_id:15,
+  car_id:car_15.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209734/2018-Range-Rover-Euro-spec-4_swidww.jpg"
 )
 
 Image.create(
-  car_id:15,
+  car_id:car_15.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518209735/2018-Range-Rover-Euro-spec-5_gfaokl.jpg"
 )
 
@@ -912,27 +912,27 @@ Image.create(
 
 
 Image.create(
-  car_id:16,
+  car_id: car_16.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-108_klx8q9.jpg"
 )
 
 Image.create(
-  car_id:16,
+  car_id: car_16.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-106_nenbah.jpg"
 )
 
 Image.create(
-  car_id:16,
+  car_id: car_16.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-103_urstw3.jpg"
 )
 
 Image.create(
-  car_id:16,
+  car_id: car_16.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-115_veti8n.jpg"
 )
 
 Image.create(
-  car_id:16,
+  car_id: car_16.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210373/2018-Ford-Mustang-GT-116_eczcuz.jpg"
 )
 
@@ -950,27 +950,27 @@ Image.create(
 
 
 Image.create(
-  car_id:17,
+  car_id:car_17.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-126_yi6jcx.jpg"
 )
 
 Image.create(
-  car_id:17,
+  car_id:car_17.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-127_b9wp5j.jpg"
 )
 
 Image.create(
-  car_id:17,
+  car_id:car_17.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-128_wrpysn.jpg"
 )
 
 Image.create(
-  car_id:17,
+  car_id:car_17.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-151_softjh.jpg"
 )
 
 Image.create(
-  car_id:17,
+  car_id:car_17.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518210712/2017-Volkswagen-Golf-GTI-Sport-153_rq2zwf.jpg"
 )
 
@@ -989,27 +989,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 18,
+  car_id: car_18.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211026/2016-Nissan-Altima-SV-101_zbig7z.jpg"
 )
 
 Image.create(
-  car_id: 18,
+  car_id: car_18.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211026/2016-Nissan-Altima-SV-106_enblk9.jpg"
 )
 
 Image.create(
-  car_id: 18,
+  car_id: car_18.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211026/2016-Nissan-Altima-SV-110_rluce9.jpg"
 )
 
 Image.create(
-  car_id: 18,
+  car_id: car_18.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211026/2016-Nissan-Altima-SV-116_lfqcuq.jpg"
 )
 
 Image.create(
-  car_id: 18,
+  car_id: car_18.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211026/2016-Nissan-Altima-SV-118_ilgchx.jpg"
 )
 
@@ -1026,27 +1026,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 19,
+  car_id: car_19.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211462/2018-Volvo-XC60-T8-101-1_moftf6.jpg"
 )
 
 Image.create(
-  car_id: 19,
+  car_id: car_19.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211462/2018-Volvo-XC60-T8-103-1_h5oaoe.jpg"
 )
 
 Image.create(
-  car_id: 19,
+  car_id: car_19.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211462/2018-Volvo-XC60-T8-106-1_fez2zw.jpg"
 )
 
 Image.create(
-  car_id: 19,
+  car_id: car_19.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211462/2018-Volvo-XC60-T8-120-1_osg0ri.jpg"
 )
 
 Image.create(
-  car_id: 19,
+  car_id: car_19.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211462/2018-Volvo-XC60-T8-122-1_js7fv8.jpg"
 )
 
@@ -1061,27 +1061,27 @@ Image.create(
 
 
 Image.create(
-  car_id: 20,
+  car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211832/2017-Ford-F-150-Raptor-SuperCab-109_vqztqz.jpg"
 )
 
 Image.create(
-  car_id: 20,
+  car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211833/2017-Ford-F-150-Raptor-SuperCab-110_jtmzjy.jpg"
 )
 
 Image.create(
-  car_id: 20,
+  car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211832/2017-Ford-F-150-Raptor-SuperCab-104_aoavcr.jpg"
 )
 
 Image.create(
-  car_id: 20,
+  car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211832/2017-Ford-F-150-Raptor-SuperCab-120_drnhjt.jpg"
 )
 
 Image.create(
-  car_id: 20,
+  car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211832/2017-Ford-F-150-Raptor-SuperCab-121_n0fumx.jpg"
 )
 
