@@ -9,6 +9,9 @@ Car.destroy_all
 User.destroy_all
 Review.destroy_all
 
+User.create( username: 'guest', email: "guest", password: "guest123")
+
+
 car_1 = Car.create!(
   year: 2016,
   make: "Toyota",
@@ -104,7 +107,7 @@ car_6 = Car.create!(
 
 
 # ID7
-car_7 = Car.create!(
+car_ = Car.create!(
   year: 2018,
   make: "Audi",
   model: "S5",

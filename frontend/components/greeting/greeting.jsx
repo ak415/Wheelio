@@ -6,7 +6,7 @@ const sessionLinks = (login) => (
   <nav className="welcome-login-signup">
     <Link className="welcome-login-signup-effects" to="/login">Login</Link>
     <Link className="home_page_signup" to="/signup">Sign Up</Link>
-    <Link className="welcome-login-signup-effects" to="" onClick={() => login({ user:{username: "guest123", password: "guest123" }})}>Demo User</Link>
+    <Link className="welcome-login-signup-effects" to="" onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
   </nav>
 );
 
