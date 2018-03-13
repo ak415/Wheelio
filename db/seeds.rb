@@ -107,7 +107,7 @@ car_6 = Car.create!(
 
 
 # ID7
-car_ = Car.create!(
+car_7 = Car.create!(
   year: 2018,
   make: "Audi",
   model: "S5",
