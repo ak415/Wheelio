@@ -124,8 +124,8 @@ Car.create!(
   mpg_city: 20,
   mpg_highway: 29,
   acceleration: 4.8,
-  top_speed: 132,
-  price: 155
+  top_speed: 155,
+  price: 54400
 )
 
 
