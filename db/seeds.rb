@@ -95,7 +95,6 @@ car_5 = Car.create!(
   price: 35895
 )
 
-
 # id6
 
 car_6 = Car.create!(
@@ -341,86 +340,6 @@ car_20 = Car.create!(
   price: 51415
 )
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Review.create(
-  body: "My camry has been extremely reliable. Great MPG and low maintenance costs.",
-  user_id: 1,
-  car_id: 1,
-  user_rating: 9
-)
-
-Review.create(
-  body: "Toyota went above and beyond to deliver a quality product here. I owner the cat for a few months not and totally love it",
-  user_id: 2,
-  car_id: 1,
-  user_rating: 10
-)
-
-Review.create(
-  body: "This vehicle is extremely reliable and good on gas. Make sure to get the hybrid version for extra savings",
-  user_id: 3,
-  car_id: 1,
-  user_rating: 9
-)
-
-Review.create(
-  body: "The corolla is perfect for driving in a city. This car is a champ if you want to fit into small parking spots",
-  user_id: 4,
-  car_id: 2,
-  user_rating: 10
-)
-
-Review.create(
-  body: "You should not buy this car if you're looking for a quiet ride insulated from your environment. Very bad NVH.",
-  user_id: 5,
-  car_id: 2,
-  user_rating: 2
-)
-
-Review.create(
-  body: "This is my third corolla, and I am happy with the quality of the car. Maintaining this car is very cheap, which I really like",
-  user_id: 6,
-  car_id: 2,
-  user_rating: 8
-)
-
-Review.create(
-  body: "This is the last Honda I will ever own. This car is not realiable and have cost more what I paid for it in maintenance fees",
-  user_id: 7,
-  car_id: 3,
-  user_rating: 1
-)
 
 Image.create(
   car_id: car_1.id,
