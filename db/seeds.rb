@@ -9,16 +9,6 @@ Car.destroy_all
 User.destroy_all
 Review.destroy_all
 
-User.create( username: 'Akram', email: "aazzaiez@gmail.com", password: "guest123")
-User.create( username: 'Dan', email: "Dand@gmail.com", password: "guest123")
-User.create( username: 'Brian', email: "obriann@gmail.com", password: "guest123")
-User.create( username: 'Miloud', email: "tmiloud@gmail.com", password: "guest123")
-User.create( username: 'Brahim', email: "rbrahim@gmail.com", password: "guest123")
-User.create( username: 'Marc', email: "kmarc@gmail.com", password: "guest123")
-User.create( username: 'Antoine', email: "qantoine@gmail.com", password: "guest123")
-User.create( username: 'guest', email: "guest", password: "guest123")
-
-
 car_1 = Car.create!(
   year: 2016,
   make: "Toyota",
@@ -1002,63 +992,4 @@ Image.create(
 Image.create(
   car_id: car_20.id,
   image_url: "http://res.cloudinary.com/aazaiez/image/upload/v1518211832/2017-Ford-F-150-Raptor-SuperCab-121_n0fumx.jpg"
-)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Upvote.create(
-  review_id: 3,
-  user_id: 2
-)
-
-Upvote.create(
-  review_id: 3,
-  user_id: 4
-)
-
-Upvote.create(
-  review_id: 3,
-  user_id: 3
-)
-
-Upvote.create(
-  review_id: 4,
-  user_id: 2
-)
-
-Upvote.create(
-  review_id: 4,
-  user_id: 4
-)
-
-Upvote.create(
-  review_id: 4,
-  user_id: 3
-)
-
-Upvote.create(
-  review_id: 5,
-  user_id: 2
-)
-
-Upvote.create(
-  review_id: 5,
-  user_id: 4
-)
-
-Upvote.create(
-  review_id: 5,
-  user_id: 3
 )
