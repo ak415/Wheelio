@@ -398,6 +398,7 @@ html {
    padding: 40px 0px 30px 0px;
    margin: 0px 0px 0px 10px;
    font-weight: 900;
+   font-family: tahoma;
  }
 
  .car-images-and-stats-flex {
@@ -405,6 +406,7 @@ html {
    flex-direction: row;
    margin: -140px 0 50px 0;
    width: 100%;
+   font-family: Gill Sans, Verdana;
  }
 
  .score-price-mpg-0to60-flex {
@@ -442,6 +444,7 @@ html {
    font-size: 20px;
    min-width: 137px;
    color: #4d4d4d;
+   white-space: nowrap;
  }
 
  .actual-price {
