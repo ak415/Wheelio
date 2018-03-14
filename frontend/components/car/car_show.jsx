@@ -233,9 +233,9 @@ class CarShow extends React.Component {
           </div>
 
           <div> {this.handleNoReviews()}</div>
-          {this.props.reviews.map(review =>
+          {this.props.reviews.map((review, idx) =>
 
-          <div className="review-content-flex">
+          <div key={idx} className="review-content-flex">
 
               <div className="reviewer-corner" >
                 <div>

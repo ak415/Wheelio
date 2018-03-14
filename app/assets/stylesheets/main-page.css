@@ -961,6 +961,7 @@ html {
   color: black;
   font-size: 30px;
   text-align: center;
+  font-family: tahoma;
 }
 
 
@@ -994,6 +995,7 @@ html {
 
 .homepage-car-wrapper {
   margin: 50px;
+  background: #f2f2f2;
 }
 
 .search-link-to-car {
