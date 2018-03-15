@@ -638,7 +638,7 @@ html {
 
 #gallery .previous{
   float:left;
-  margin: -250px 0px 50px 18px;
+  margin: -250px 0px 50px 16.5px;
 
   display:none;
   text-decoration:none;
@@ -660,7 +660,7 @@ html {
 #gallery .next{
     display:none;
     float:right;
-    margin: -240px -4px 0px 0px;
+    margin: -240px -3px 0px 0px;
     text-decoration:none;
     z-index: 1;
     position:relative;
