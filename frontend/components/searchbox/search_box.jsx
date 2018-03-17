@@ -33,7 +33,7 @@ class SearchBox extends React.Component {
     if (this.props.location.pathname === "/") {
       return "Your search starts here";
     } else {
-      return "e.g. Audi A5";
+      return "e.g. Audi S5";
     }
   }
 
