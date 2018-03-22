@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 // ADDED DEMO USER WITH ONCLICK LOGIN
 const sessionLinks = (login) => (
+
   <nav className="welcome-login-signup">
     <Link className="welcome-login-signup-effects" to="/login">Login</Link>
     <Link className="home_page_signup" to="/signup">Sign Up</Link>
-    <Link className="welcome-login-signup-effects" to="" onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
+    <Link className="welcome-login-signup-effects" to={this.props.route.path} onClick={() => login({ user:{username: "guest", password: "guest123" }})}>Demo User</Link>
   </nav>
 );
 
